@@ -1,0 +1,8 @@
+---
+id: org.metaborg:lang.java.evaluation:1.1.0-SNAPSHOT
+name: metaborg-java-evaluation
+dependencies:
+  compile:
+  - org.metaborg:lang.java:1.1.0-SNAPSHOT
+build:
+  useBuildSystemSpec: true
