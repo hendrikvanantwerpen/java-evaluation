@@ -1,0 +1,14 @@
+---
+id: org.metaborg:lang.java.evaluation.jdk:1.8
+dependencies:
+  compile:
+  - org.metaborg:lang.java:1.1.0-SNAPSHOT
+  - org.metaborg:lang.java.statics:1.1.0-SNAPSHOT
+sources:
+- language: metaborg-java
+  directory: src
+exports:
+- language: metaborg-java
+  directory: src
+build:
+  useBuildSystemSpec: true

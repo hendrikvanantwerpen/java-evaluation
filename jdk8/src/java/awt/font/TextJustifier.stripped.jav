@@ -1,2 +1,0 @@
-package java.awt.font;
-
