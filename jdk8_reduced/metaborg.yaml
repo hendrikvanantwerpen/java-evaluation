@@ -1,9 +1,10 @@
 ---
-id: org.metaborg:lang.java.evaluation.jdk:1.8
+id: org.metaborg:lang.java.evaluation.jdk8_reduced:1.8
+name: JDK8Reduced
 dependencies:
   compile:
   - org.metaborg:lang.java:1.1.0-SNAPSHOT
-  - org.metaborg:lang.java.statics:1.1.0-SNAPSHOT
+  # org.metaborg:lang.java.statics:1.1.0-SNAPSHOT
 sources:
 - language: metaborg-java
   directory: src

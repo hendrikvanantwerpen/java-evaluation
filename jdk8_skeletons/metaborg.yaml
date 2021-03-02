@@ -1,5 +1,6 @@
 ---
-id: org.metaborg:lang.java.evaluation.jdk:1.8
+id: org.metaborg:lang.java.evaluation.jdk8_skeletons:1.8
+name: JDK8Skeletons
 dependencies:
   compile:
   - org.metaborg:lang.java:1.1.0-SNAPSHOT
