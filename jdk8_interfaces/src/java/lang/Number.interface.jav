@@ -12,5 +12,4 @@ public abstract class Number implements java. io. Serializable {
   public short shortValue( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-  private static final long serialVersionUID;
 }

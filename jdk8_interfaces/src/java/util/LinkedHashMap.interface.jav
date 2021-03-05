@@ -9,19 +9,12 @@ public class LinkedHashMap<K,V> extends HashMap<K, V> implements Map<K, V> {
   static class Entry<K,V> extends HashMap. Node<K, V> {
     Entry<K, V> before, after;
     Entry(int hash,K key,V value, Node<K, V> next) {
-      super(hash, key, value, next);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
   }
-  private static final long serialVersionUID;
   transient LinkedHashMap. Entry<K, V> head;
   transient LinkedHashMap. Entry<K, V> tail;
   final boolean accessOrder;
-  private void linkNodeLast(LinkedHashMap. Entry<K, V> p) {
-                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                          }
-  private void transferLinks(LinkedHashMap. Entry<K, V> src, LinkedHashMap. Entry<K, V> dst) {
-                                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                             }
   void reinitialize( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
@@ -50,19 +43,19 @@ public class LinkedHashMap<K,V> extends HashMap<K, V> implements Map<K, V> {
                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                }
   public LinkedHashMap(int initialCapacity, float loadFactor) {
-    super(initialCapacity, loadFactor);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashMap(int initialCapacity) {
-    super(initialCapacity);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashMap( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashMap(Map<? extends K, ? extends V> m) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashMap(int initialCapacity,float loadFactor, boolean accessOrder) {
-    super(initialCapacity, loadFactor);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public boolean containsValue(Object value) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
@@ -76,9 +69,6 @@ public class LinkedHashMap<K,V> extends HashMap<K, V> implements Map<K, V> {
   public void clear( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
-  protected boolean removeEldestEntry(Map. Entry<K, V> eldest) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
   public Set<K> keySet( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -165,6 +155,7 @@ public class LinkedHashMap<K,V> extends HashMap<K, V> implements Map<K, V> {
     LinkedHashMap. Entry<K, V> current;
     int expectedModCount;
     LinkedHashIterator( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public final boolean hasNext( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");

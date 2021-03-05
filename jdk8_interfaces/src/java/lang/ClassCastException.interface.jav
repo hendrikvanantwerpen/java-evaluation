@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class ClassCastException extends RuntimeException {
-  private static final long serialVersionUID;
   public ClassCastException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ClassCastException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

@@ -5,12 +5,11 @@ public final class Boolean implements java. io. Serializable, Comparable<Boolean
   public static final Boolean TRUE;
   public static final Boolean FALSE;
   public static final Class<Boolean> TYPE;
-  private final boolean value;
-  private static final long serialVersionUID;
   public Boolean(boolean value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Boolean(String s) {
-    this(parseBoolean(s));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static boolean parseBoolean(String s) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");

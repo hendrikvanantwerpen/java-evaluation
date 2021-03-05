@@ -5,13 +5,14 @@ public class FieldPosition {
   int field;
   int endIndex;
   int beginIndex;
-  private Format. Field attribute;
   public FieldPosition(int field) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public FieldPosition(Format. Field attribute) {
-    this(attribute, -1);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public FieldPosition(Format. Field attribute, int fieldID) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Format. Field getFieldAttribute( ) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -43,14 +44,7 @@ public class FieldPosition {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private boolean matchesField(Format. Field attribute) {
-                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                        }
-  private boolean matchesField(Format. Field attribute, int field) {
-                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                   }
   private class Delegate implements Format. FieldDelegate {
-    private boolean encounteredField;
     public void formatted(Format. Field attr,Object value,int start,int end, StringBuffer buffer) {
                                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                   }

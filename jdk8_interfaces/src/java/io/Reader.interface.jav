@@ -2,11 +2,6 @@ package java.io;
 
 
 public abstract class Reader implements Readable, Closeable {
-  protected Object lock;
-  protected Reader( ) {
-  }
-  protected Reader(Object lock) {
-  }
   public int read(java. nio. CharBuffer target) throws IOException {
                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                                    }
@@ -17,8 +12,6 @@ public abstract class Reader implements Readable, Closeable {
                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                   }
   abstract public int read(char cbuf[],int off, int len) throws IOException ;
-  private static final int maxSkipBufferSize;
-  private char skipBuffer[];
   public long skip(long n) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }

@@ -2,8 +2,6 @@ package java.util;
 
 
 public abstract class AbstractQueue<E> extends AbstractCollection<E> implements Queue<E> {
-  protected AbstractQueue( ) {
-  }
   public boolean add(E e) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }

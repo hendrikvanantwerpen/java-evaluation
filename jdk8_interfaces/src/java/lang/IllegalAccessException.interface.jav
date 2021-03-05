@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class IllegalAccessException extends ReflectiveOperationException {
-  private static final long serialVersionUID;
   public IllegalAccessException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IllegalAccessException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

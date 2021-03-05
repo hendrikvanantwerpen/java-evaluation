@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class ArithmeticException extends RuntimeException {
-  private static final long serialVersionUID;
   public ArithmeticException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ArithmeticException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

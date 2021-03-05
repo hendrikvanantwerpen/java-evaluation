@@ -2,14 +2,13 @@ package java.lang;
 
 
 public class LinkageError extends Error {
-  private static final long serialVersionUID;
   public LinkageError( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkageError(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkageError(String s, Throwable cause) {
-    super(s, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

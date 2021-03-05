@@ -2,17 +2,16 @@ package java.lang;
 
 
 abstract public class VirtualMachineError extends Error {
-  private static final long serialVersionUID;
   public VirtualMachineError( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public VirtualMachineError(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public VirtualMachineError(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public VirtualMachineError(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

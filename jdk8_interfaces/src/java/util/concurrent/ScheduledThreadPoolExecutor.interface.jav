@@ -1,32 +1,22 @@
 package java.util.concurrent;
 
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.*;
 
 public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements ScheduledExecutorService {
-  private volatile boolean continueExistingPeriodicTasksAfterShutdown;
-  private volatile boolean executeExistingDelayedTasksAfterShutdown;
-  private volatile boolean removeOnCancel;
-  private static final AtomicLong sequencer;
   final long now( ) {
                       throw new java . lang . RuntimeException ("Implementation stripped");
                     }
   private class ScheduledFutureTask<V> extends FutureTask<V> implements RunnableScheduledFuture<V> {
-    private final long sequenceNumber;
-    private long time;
-    private final long period;
     RunnableScheduledFuture<V> outerTask;
     int heapIndex;
     ScheduledFutureTask(Runnable r,V result, long ns) {
-      super(r, result);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     ScheduledFutureTask(Runnable r,V result,long ns, long period) {
-      super(r, result);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     ScheduledFutureTask(Callable<V> callable, long ns) {
-      super(callable);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public long getDelay(TimeUnit unit) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -37,9 +27,6 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     public boolean isPeriodic( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
-    private void setNextRunTime( ) {
-                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                   }
     public boolean cancel(boolean mayInterruptIfRunning) {
                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                          }
@@ -50,42 +37,27 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
   boolean canRunInCurrentRunState(boolean periodic) {
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }
-  private void delayedExecute(RunnableScheduledFuture<?> task) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
   void reExecutePeriodic(RunnableScheduledFuture<?> task) {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                           }
   void onShutdown( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
                      }
-  protected <V> RunnableScheduledFuture<V> decorateTask(Runnable runnable, RunnableScheduledFuture<V> task) {
-                                                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                            }
-  protected <V> RunnableScheduledFuture<V> decorateTask(Callable<V> callable, RunnableScheduledFuture<V> task) {
-                                                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                               }
   public ScheduledThreadPoolExecutor(int corePoolSize) {
-    super(corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS, new DelayedWorkQueue ( ));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ScheduledThreadPoolExecutor(int corePoolSize, ThreadFactory threadFactory) {
-    super(corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS, new DelayedWorkQueue ( ), threadFactory);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ScheduledThreadPoolExecutor(int corePoolSize, RejectedExecutionHandler handler) {
-    super(corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS, new DelayedWorkQueue ( ), handler);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ScheduledThreadPoolExecutor(int corePoolSize,ThreadFactory threadFactory, RejectedExecutionHandler handler) {
-    super(corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS, new DelayedWorkQueue ( ), threadFactory, handler);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private long triggerTime(long delay, TimeUnit unit) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
   long triggerTime(long delay) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
-  private long overflowFree(long delay) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
   public ScheduledFuture<?> schedule(Runnable command,long delay, TimeUnit unit) {
                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                  }
@@ -138,27 +110,6 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
   static class DelayedWorkQueue extends AbstractQueue<Runnable> implements BlockingQueue<Runnable> {
-    private static final int INITIAL_CAPACITY;
-    private RunnableScheduledFuture<?> [] queue;
-    private final ReentrantLock lock;
-    private int size;
-    private Thread leader;
-    private final Condition available;
-    private void setIndex(RunnableScheduledFuture<?> f, int idx) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
-    private void siftUp(int k, RunnableScheduledFuture<?> key) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
-    private void siftDown(int k, RunnableScheduledFuture<?> key) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
-    private void grow( ) {
-                           throw new java . lang . RuntimeException ("Implementation stripped");
-                         }
-    private int indexOf(Object x) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
     public boolean contains(Object x) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
@@ -189,9 +140,6 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     public boolean offer(Runnable e,long timeout, TimeUnit unit) {
                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                  }
-    private RunnableScheduledFuture<?> finishPoll(RunnableScheduledFuture<?> f) {
-                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                }
     public RunnableScheduledFuture<?> poll( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
@@ -204,9 +152,6 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     public void clear( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-    private RunnableScheduledFuture<?> peekExpired( ) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
     public int drainTo(Collection<? super Runnable> c) {
                                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                                        }
@@ -227,6 +172,7 @@ public class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
       int cursor;
       int lastRet;
       Itr(RunnableScheduledFuture<?> [] array) {
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public boolean hasNext( ) {
                                   throw new java . lang . RuntimeException ("Implementation stripped");

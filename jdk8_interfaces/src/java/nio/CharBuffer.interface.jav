@@ -8,10 +8,10 @@ public abstract class CharBuffer extends Buffer implements Comparable<CharBuffer
   final int offset;
   boolean isReadOnly;
   CharBuffer(int mark,int pos,int lim,int cap,char [] hb, int offset) {
-    super(mark, pos, lim, cap);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   CharBuffer(int mark,int pos,int lim, int cap) {
-    this(mark, pos, lim, cap, null, 0);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static CharBuffer allocate(int capacity) {
                                                     throw new java . lang . RuntimeException ("Implementation stripped");
@@ -77,15 +77,9 @@ public abstract class CharBuffer extends Buffer implements Comparable<CharBuffer
   public boolean equals(Object ob) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                    }
-  private static boolean equals(char x, char y) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public int compareTo(CharBuffer that) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private static int compare(char x, char y) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }

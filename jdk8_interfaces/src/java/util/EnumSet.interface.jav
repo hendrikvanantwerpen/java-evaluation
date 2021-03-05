@@ -4,8 +4,8 @@ package java.util;
 public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E> implements Cloneable, java. io. Serializable {
   final Class<E> elementType;
   final Enum<?> [] universe;
-  private static Enum<?> [] ZERO_LENGTH_ENUM_ARRAY;
   EnumSet(Class<E> elementType, Enum<?> [] universe) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static <E extends Enum<E>> EnumSet<E> noneOf(Class<E> elementType) {
                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -52,23 +52,12 @@ public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E> implemen
   final void typeCheck(E e) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static <E extends Enum<E>> E [] getUniverse(Class<E> elementType) {
-                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                            }
   private static class SerializationProxy<E extends Enum<E>> implements java. io. Serializable {
-    private final Class<E> elementType;
-    private final Enum<?> [] elements;
     SerializationProxy(EnumSet<E> set) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    private Object readResolve( ) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
-    private static final long serialVersionUID;
   }
   Object writeReplace( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private void readObject(java. io. ObjectInputStream stream) throws java. io. InvalidObjectException {
-                                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                      }
 }

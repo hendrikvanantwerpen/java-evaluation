@@ -3,20 +3,9 @@ package java.lang.invoke;
 import java.lang.ref.WeakReference;
 import java.lang.ref.ReferenceQueue;
 import java.util.List;
-import java.util.concurrent.ConcurrentMap;
+import static java.lang.invoke.MethodHandleStatics.*;
 
 public final class MethodType implements java. io. Serializable {
-  private static final long serialVersionUID;
-  private final Class<?> rtype;
-  private final Class<?> [] ptypes;
-  private MethodTypeForm form;
-  private Object wrapAlt;
-  private Invokers invokers;
-  private String methodDescriptor;
-  private MethodType(Class<?> rtype,Class<?> [] ptypes, boolean trusted) {
-  }
-  private MethodType(Class<?> [] ptypes, Class<?> rtype) {
-  }
   MethodTypeForm form( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
@@ -32,21 +21,9 @@ public final class MethodType implements java. io. Serializable {
   static final int MAX_JVM_ARITY;
   static final int MAX_MH_ARITY;
   static final int MAX_MH_INVOKER_ARITY;
-  private static void checkRtype(Class<?> rtype) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
-  private static void checkPtype(Class<?> ptype) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
-  private static int checkPtypes(Class<?> [] ptypes) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
   static void checkSlotCount(int count) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private static IndexOutOfBoundsException newIndexOutOfBoundsException(Object num) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
   static final ConcurrentWeakInternSet<MethodType> internTable;
   static final Class<?> [] NO_PTYPES;
   public static MethodType methodType(Class<?> rtype, Class<?> [] ptypes) {
@@ -55,9 +32,6 @@ public final class MethodType implements java. io. Serializable {
   public static MethodType methodType(Class<?> rtype, List<Class<?>> ptypes) {
                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                              }
-  private static Class<?> [] listToArray(List<Class<?>> ptypes) {
-                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                }
   public static MethodType methodType(Class<?> rtype,Class<?> ptype0, Class<?> ... ptypes) {
                                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                            }
@@ -73,7 +47,6 @@ public final class MethodType implements java. io. Serializable {
   static MethodType makeImpl(Class<?> rtype,Class<?> [] ptypes, boolean trusted) {
                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                  }
-  private static final MethodType [] objectOnlyTypes;
   public static MethodType genericMethodType(int objectArgCount, boolean finalArray) {
                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                      }
@@ -140,12 +113,6 @@ public final class MethodType implements java. io. Serializable {
   public MethodType unwrap( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
-  private static MethodType wrapWithPrims(MethodType pt) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
-  private static MethodType unwrapWithNoPrims(MethodType wt) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
   public Class<?> parameterType(int num) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
@@ -167,9 +134,6 @@ public final class MethodType implements java. io. Serializable {
   public boolean equals(Object x) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private boolean equals(MethodType that) {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
   public int hashCode( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
@@ -188,12 +152,6 @@ public final class MethodType implements java. io. Serializable {
   boolean explicitCastEquivalentToAsType(MethodType newType) {
                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                              }
-  private static boolean explicitCastEquivalentToAsType(Class<?> src, Class<?> dst) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
-  private boolean canConvertParameters(Class<?> [] srcTypes, Class<?> [] dstTypes) {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
   static boolean canConvert(Class<?> src, Class<?> dst) {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                                         }
@@ -218,24 +176,9 @@ public final class MethodType implements java. io. Serializable {
   static String toFieldDescriptorString(Class<?> cls) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
-  private static final java. io. ObjectStreamField [] serialPersistentFields;
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
-  private static final long rtypeOffset, ptypesOffset;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
-  private Object readResolve( ) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
   private static class ConcurrentWeakInternSet<T> {
-    private final ConcurrentMap<WeakEntry<T>, WeakEntry<T>> map;
-    private final ReferenceQueue<T> stale;
     public ConcurrentWeakInternSet( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public T get(T elem) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
@@ -243,16 +186,13 @@ public final class MethodType implements java. io. Serializable {
     public T add(T elem) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-    private void expungeStaleElements( ) {
-                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                         }
     private static class WeakEntry<T> extends WeakReference<T> {
       public final int hashcode;
       public WeakEntry(T key, ReferenceQueue<T> queue) {
-        super(key, queue);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public WeakEntry(T key) {
-        super(key);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public boolean equals(Object obj) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");

@@ -5,12 +5,10 @@ import java.time.ZoneId;
 
 abstract public class TimeZone implements Serializable, Cloneable {
   public TimeZone( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static final int SHORT;
   public static final int LONG;
-  private static final int ONE_MINUTE;
-  private static final int ONE_HOUR;
-  private static final int ONE_DAY;
   static final long serialVersionUID;
   public abstract int getOffset(int era,int year,int month,int day,int dayOfWeek, int milliseconds) ;
   public int getOffset(long date) {
@@ -39,9 +37,6 @@ abstract public class TimeZone implements Serializable, Cloneable {
   public String getDisplayName(boolean daylight,int style, Locale locale) {
                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                                           }
-  private static String [] getDisplayNames(String id, Locale locale) {
-                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                     }
   public int getDSTSavings( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
@@ -59,26 +54,18 @@ abstract public class TimeZone implements Serializable, Cloneable {
   public ZoneId toZoneId( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static TimeZone getTimeZone(String ID, boolean fallback) {
-                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                   }
   public static synchronized String [] getAvailableIDs(int rawOffset) {
                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                                       }
   public static synchronized String [] getAvailableIDs( ) {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                           }
-  private static native String getSystemTimeZoneID(String javaHome) ;
-  private static native String getSystemGMTOffsetID( ) ;
   public static TimeZone getDefault( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
   static TimeZone getDefaultRef( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                    }
-  private static synchronized TimeZone setDefaultZone( ) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
   public static void setDefault(TimeZone zone) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
@@ -89,12 +76,5 @@ abstract public class TimeZone implements Serializable, Cloneable {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
   static final TimeZone NO_TIMEZONE;
-  private String ID;
-  private static volatile TimeZone defaultTimeZone;
   static final String GMT_ID;
-  private static final int GMT_ID_LENGTH;
-  private static volatile TimeZone mainAppContextDefault;
-  private static final TimeZone parseCustomTimeZone(String id) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
 }

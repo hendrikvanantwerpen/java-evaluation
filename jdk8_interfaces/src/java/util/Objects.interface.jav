@@ -3,8 +3,6 @@ package java.util;
 import java.util.function.Supplier;
 
 public final class Objects {
-  private Objects( ) {
-  }
   public static boolean equals(Object a, Object b) {
                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                    }

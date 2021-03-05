@@ -6,22 +6,17 @@ import java.util.function.Function;
 import java.util.function.BiFunction;
 
 public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Cloneable, java. io. Serializable {
-  private transient Entry<?, ?> [] table;
-  private transient int count;
-  private int threshold;
-  private float loadFactor;
-  private transient int modCount;
-  private static final long serialVersionUID;
   public Hashtable(int initialCapacity, float loadFactor) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Hashtable(int initialCapacity) {
-    this(initialCapacity, 0.75f);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Hashtable( ) {
-    this(11, 0.75f);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Hashtable(Map<? extends K, ? extends V> t) {
-    this(Math. max(2 * t. size( ), 11), 0.75f);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public synchronized int size( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
@@ -47,13 +42,6 @@ public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Clone
   public synchronized V get(Object key) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private static final int MAX_ARRAY_SIZE;
-  protected void rehash( ) {
-                             throw new java . lang . RuntimeException ("Implementation stripped");
-                           }
-  private void addEntry(int hash,K key,V value, int index) {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
   public synchronized V put(K key, V value) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
@@ -72,15 +60,6 @@ public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Clone
   public synchronized String toString( ) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private <T> Enumeration<T> getEnumeration(int type) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
-  private <T> Iterator<T> getIterator(int type) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
-  private transient volatile Set<K> keySet;
-  private transient volatile Set<Map. Entry<K, V>> entrySet;
-  private transient volatile Collection<V> values;
   public Set<K> keySet( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -180,25 +159,11 @@ public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Clone
   public synchronized V merge(K key,V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction) {
                                                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                               }
-  private void writeObject(java. io. ObjectOutputStream s) throws IOException {
-                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                              }
-  private void readObject(java. io. ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                    }
-  private void reconstitutionPut(Entry<?, ?> [] tab,K key, V value) throws StreamCorruptedException {
-                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                    }
   private static class Entry<K,V> implements Map. Entry<K, V> {
     final int hash;
     final K key;
     V value;
     Entry<K, V> next;
-    protected Entry(int hash,K key,V value, Entry<K, V> next) {
-    }
-    protected Object clone( ) {
-                                throw new java . lang . RuntimeException ("Implementation stripped");
-                              }
     public K getKey( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
@@ -218,9 +183,6 @@ public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Clone
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
   }
-  private static final int KEYS;
-  private static final int VALUES;
-  private static final int ENTRIES;
   private class Enumerator<T> implements Enumeration<T>, Iterator<T> {
     Entry<?, ?> [] table;
     int index;
@@ -228,8 +190,8 @@ public class Hashtable<K,V> extends Dictionary<K, V> implements Map<K, V>, Clone
     Entry<?, ?> lastReturned;
     int type;
     boolean iterator;
-    protected int expectedModCount;
     Enumerator(int type, boolean iterator) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public boolean hasMoreElements( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");

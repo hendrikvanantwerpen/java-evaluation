@@ -2,12 +2,11 @@ package java.io;
 
 
 public class CharArrayWriter extends Writer {
-  protected char buf[];
-  protected int count;
   public CharArrayWriter( ) {
-    this(32);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public CharArrayWriter(int initialSize) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void write(int c) {
                              throw new java . lang . RuntimeException ("Implementation stripped");

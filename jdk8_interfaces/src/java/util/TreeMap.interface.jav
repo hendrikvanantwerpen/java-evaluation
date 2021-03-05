@@ -5,17 +5,17 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
 public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V>, Cloneable, java. io. Serializable {
-  private final Comparator<? super K> comparator;
-  private transient Entry<K, V> root;
-  private transient int size;
-  private transient int modCount;
   public TreeMap( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeMap(Comparator<? super K> comparator) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeMap(Map<? extends K, ? extends V> m) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeMap(SortedMap<K, ? extends V> m) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public int size( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -107,9 +107,6 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   public K higherKey(K key) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private transient EntrySet entrySet;
-  private transient KeySet<K> navigableKeySet;
-  private transient NavigableMap<K, V> descendingMap;
   public Set<K> keySet( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -205,8 +202,8 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
   static final class KeySet<E> extends AbstractSet<E> implements NavigableSet<E> {
-    private final NavigableMap<E, ?> m;
     KeySet(NavigableMap<E, ?> map) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Iterator<E> iterator( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
@@ -286,6 +283,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     Entry<K, V> lastReturned;
     int expectedModCount;
     PrivateEntryIterator(Entry<K, V> first) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public final boolean hasNext( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -302,7 +300,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   final class EntryIterator extends PrivateEntryIterator<Map. Entry<K, V>> {
     EntryIterator(Entry<K, V> first) {
-      super(first);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Map. Entry<K, V> next( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -310,7 +308,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   final class ValueIterator extends PrivateEntryIterator<V> {
     ValueIterator(Entry<K, V> first) {
-      super(first);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public V next( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -318,7 +316,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   final class KeyIterator extends PrivateEntryIterator<K> {
     KeyIterator(Entry<K, V> first) {
-      super(first);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public K next( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -326,7 +324,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   final class DescendingKeyIterator extends PrivateEntryIterator<K> {
     DescendingKeyIterator(Entry<K, V> first) {
-      super(first);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public K next( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -350,14 +348,13 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   static <K> K key(Entry<K, ?> e) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private static final Object UNBOUNDED;
   abstract static class NavigableSubMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V>, java. io. Serializable {
-    private static final long serialVersionUID;
     final TreeMap<K, V> m;
     final K lo, hi;
     final boolean fromStart, toEnd;
     final boolean loInclusive, hiInclusive;
     NavigableSubMap(TreeMap<K, V> m,boolean fromStart,K lo,boolean loInclusive,boolean toEnd,K hi, boolean hiInclusive) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     final boolean tooLow(Object key) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -489,7 +486,6 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }
     abstract class EntrySetView extends AbstractSet<Map. Entry<K, V>> {
-      private transient int size, sizeModCount;
       public int size( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
@@ -509,6 +505,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
       final Object fenceKey;
       int expectedModCount;
       SubMapIterator(TreeMap. Entry<K, V> first, TreeMap. Entry<K, V> fence) {
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public final boolean hasNext( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
@@ -528,7 +525,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     }
     final class SubMapEntryIterator extends SubMapIterator<Map. Entry<K, V>> {
       SubMapEntryIterator(TreeMap. Entry<K, V> first, TreeMap. Entry<K, V> fence) {
-        super(first, fence);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public Map. Entry<K, V> next( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
@@ -539,7 +536,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     }
     final class DescendingSubMapEntryIterator extends SubMapIterator<Map. Entry<K, V>> {
       DescendingSubMapEntryIterator(TreeMap. Entry<K, V> last, TreeMap. Entry<K, V> fence) {
-        super(last, fence);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public Map. Entry<K, V> next( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
@@ -550,7 +547,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     }
     final class SubMapKeyIterator extends SubMapIterator<K> implements Spliterator<K> {
       SubMapKeyIterator(TreeMap. Entry<K, V> first, TreeMap. Entry<K, V> fence) {
-        super(first, fence);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public K next( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -579,7 +576,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     }
     final class DescendingSubMapKeyIterator extends SubMapIterator<K> implements Spliterator<K> {
       DescendingSubMapKeyIterator(TreeMap. Entry<K, V> last, TreeMap. Entry<K, V> fence) {
-        super(last, fence);
+        throw new java . lang . RuntimeException ("Implementation stripped");
       }
       public K next( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -605,9 +602,8 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     }
   }
   static final class AscendingSubMap<K,V> extends NavigableSubMap<K, V> {
-    private static final long serialVersionUID;
     AscendingSubMap(TreeMap<K, V> m,boolean fromStart,K lo,boolean loInclusive,boolean toEnd,K hi, boolean hiInclusive) {
-      super(m, fromStart, lo, loInclusive, toEnd, hi, hiInclusive);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Comparator<? super K> comparator( ) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
@@ -661,11 +657,9 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
                                          }
   }
   static final class DescendingSubMap<K,V> extends NavigableSubMap<K, V> {
-    private static final long serialVersionUID;
     DescendingSubMap(TreeMap<K, V> m,boolean fromStart,K lo,boolean loInclusive,boolean toEnd,K hi, boolean hiInclusive) {
-      super(m, fromStart, lo, loInclusive, toEnd, hi, hiInclusive);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    private final Comparator<? super K> reverseComparator;
     public Comparator<? super K> comparator( ) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
@@ -718,12 +712,6 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
                                          }
   }
   private class SubMap extends AbstractMap<K, V> implements SortedMap<K, V>, java. io. Serializable {
-    private static final long serialVersionUID;
-    private boolean fromStart, toEnd;
-    private K fromKey, toKey;
-    private Object readResolve( ) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
     public Set<Map. Entry<K, V>> entrySet( ) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
@@ -746,8 +734,6 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
   }
-  private static final boolean RED;
-  private static final boolean BLACK;
   static final class Entry<K,V> implements Map. Entry<K, V> {
     K key;
     V value;
@@ -756,6 +742,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     Entry<K, V> parent;
     boolean color;
     Entry(K key,V value, Entry<K, V> parent) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public K getKey( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -788,58 +775,12 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   static <K,V> Entry<K, V> predecessor(Entry<K, V> t) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
-  private static <K,V> boolean colorOf(Entry<K, V> p) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
-  private static <K,V> Entry<K, V> parentOf(Entry<K, V> p) {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
-  private static <K,V> void setColor(Entry<K, V> p, boolean c) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
-  private static <K,V> Entry<K, V> leftOf(Entry<K, V> p) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
-  private static <K,V> Entry<K, V> rightOf(Entry<K, V> p) {
-                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                          }
-  private void rotateLeft(Entry<K, V> p) {
-                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                         }
-  private void rotateRight(Entry<K, V> p) {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
-  private void fixAfterInsertion(Entry<K, V> x) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
-  private void deleteEntry(Entry<K, V> p) {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
-  private void fixAfterDeletion(Entry<K, V> x) {
-                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                               }
-  private static final long serialVersionUID;
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(final java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                    }
   void readTreeSet(int size,java. io. ObjectInputStream s, V defaultVal) throws java. io. IOException, ClassNotFoundException {
                                                                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                               }
   void addAllForTreeSet(SortedSet<? extends K> set, V defaultVal) {
                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                   }
-  private void buildFromSorted(int size,Iterator<?> it,java. io. ObjectInputStream str, V defaultVal) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                                                           }
-  private final Entry<K, V> buildFromSorted(int level,int lo,int hi,int redLevel,Iterator<?> it,java. io. ObjectInputStream str, V defaultVal) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                                                                                                    }
-  private static int computeRedLevel(int sz) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   static <K> Spliterator<K> keySpliteratorFor(NavigableMap<K, ?> m) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
@@ -857,6 +798,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
     int est;
     int expectedModCount;
     TreeMapSpliterator(TreeMap<K, V> tree,TreeMap. Entry<K, V> origin,TreeMap. Entry<K, V> fence,int side,int est, int expectedModCount) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     final int getEstimate( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
@@ -867,7 +809,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   static final class KeySpliterator<K,V> extends TreeMapSpliterator<K, V> implements Spliterator<K> {
     KeySpliterator(TreeMap<K, V> tree,TreeMap. Entry<K, V> origin,TreeMap. Entry<K, V> fence,int side,int est, int expectedModCount) {
-      super(tree, origin, fence, side, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public KeySpliterator<K, V> trySplit( ) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -887,7 +829,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   static final class DescendingKeySpliterator<K,V> extends TreeMapSpliterator<K, V> implements Spliterator<K> {
     DescendingKeySpliterator(TreeMap<K, V> tree,TreeMap. Entry<K, V> origin,TreeMap. Entry<K, V> fence,int side,int est, int expectedModCount) {
-      super(tree, origin, fence, side, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public DescendingKeySpliterator<K, V> trySplit( ) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
@@ -904,7 +846,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   static final class ValueSpliterator<K,V> extends TreeMapSpliterator<K, V> implements Spliterator<V> {
     ValueSpliterator(TreeMap<K, V> tree,TreeMap. Entry<K, V> origin,TreeMap. Entry<K, V> fence,int side,int est, int expectedModCount) {
-      super(tree, origin, fence, side, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public ValueSpliterator<K, V> trySplit( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -921,7 +863,7 @@ public class TreeMap<K,V> extends AbstractMap<K, V> implements NavigableMap<K, V
   }
   static final class EntrySpliterator<K,V> extends TreeMapSpliterator<K, V> implements Spliterator<Map. Entry<K, V>> {
     EntrySpliterator(TreeMap<K, V> tree,TreeMap. Entry<K, V> origin,TreeMap. Entry<K, V> fence,int side,int est, int expectedModCount) {
-      super(tree, origin, fence, side, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public EntrySpliterator<K, V> trySplit( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");

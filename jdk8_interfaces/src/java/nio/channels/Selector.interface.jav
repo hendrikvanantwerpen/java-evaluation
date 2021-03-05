@@ -6,8 +6,6 @@ import java.nio.channels.spi.SelectorProvider;
 import java.util.Set;
 
 public abstract class Selector implements Closeable {
-  protected Selector( ) {
-  }
   public static Selector open( ) throws IOException {
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }

@@ -2,11 +2,10 @@ package java.io;
 
 
 public class UnsupportedEncodingException extends IOException {
-  private static final long serialVersionUID;
   public UnsupportedEncodingException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public UnsupportedEncodingException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

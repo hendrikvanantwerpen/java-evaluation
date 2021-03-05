@@ -2,13 +2,11 @@ package java.io;
 
 
 public class ByteArrayInputStream extends InputStream {
-  protected byte buf[];
-  protected int pos;
-  protected int mark;
-  protected int count;
   public ByteArrayInputStream(byte buf[]) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ByteArrayInputStream(byte buf[],int offset, int length) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public synchronized int read( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");

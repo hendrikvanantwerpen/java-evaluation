@@ -2,16 +2,14 @@ package java.lang;
 
 
 public class ClassNotFoundException extends ReflectiveOperationException {
-  private static final long serialVersionUID;
-  private Throwable ex;
   public ClassNotFoundException( ) {
-    super((Throwable ) null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ClassNotFoundException(String s) {
-    super(s, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ClassNotFoundException(String s, Throwable ex) {
-    super(s, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Throwable getException( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");

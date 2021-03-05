@@ -2,17 +2,16 @@ package java.lang;
 
 
 public class SecurityException extends RuntimeException {
-  private static final long serialVersionUID;
   public SecurityException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SecurityException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SecurityException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SecurityException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

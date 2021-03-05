@@ -2,10 +2,6 @@ package java.io;
 
 
 public abstract class FilterReader extends Reader {
-  protected Reader in;
-  protected FilterReader(Reader in) {
-    super(in);
-  }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }

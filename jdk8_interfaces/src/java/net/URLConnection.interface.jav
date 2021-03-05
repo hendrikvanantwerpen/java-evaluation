@@ -3,27 +3,11 @@ package java.net;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Hashtable;
 import java.util.Map;
 import java.util.List;
 import java.security.Permission;
-import sun.net.www.MessageHeader;
 
 public abstract class URLConnection {
-  protected URL url;
-  protected boolean doInput;
-  protected boolean doOutput;
-  private static boolean defaultAllowUserInteraction;
-  protected boolean allowUserInteraction;
-  private static boolean defaultUseCaches;
-  protected boolean useCaches;
-  protected long ifModifiedSince;
-  protected boolean connected;
-  private int connectTimeout;
-  private int readTimeout;
-  private MessageHeader requests;
-  private static FileNameMap fileNameMap;
-  private static boolean fileNameMapLoaded;
   public static synchronized FileNameMap getFileNameMap( ) {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
@@ -43,8 +27,6 @@ public abstract class URLConnection {
   public int getReadTimeout( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
-  protected URLConnection(URL url) {
-  }
   public URL getURL( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
@@ -172,39 +154,15 @@ public abstract class URLConnection {
   public static synchronized void setContentHandlerFactory(ContentHandlerFactory fac) {
                                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                       }
-  private static Hashtable<String, ContentHandler> handlers;
   synchronized ContentHandler getContentHandler( ) throws UnknownServiceException {
                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                   }
-  private String stripOffParameters(String contentType) {
-                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                        }
-  private static final String contentClassPrefix;
-  private static final String contentPathProp;
-  private ContentHandler lookupContentHandlerClassFor(String contentType) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-                                                                                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                                                        }
-  private String typeToPackageName(String contentType) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
-  private String getContentHandlerPkgPrefixes( ) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
   public static String guessContentTypeFromName(String fname) {
                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                               }
   static public String guessContentTypeFromStream(InputStream is) throws IOException {
                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                      }
-  static private boolean checkfpx(InputStream is) throws IOException {
-                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                     }
-  static private int readBytes(int c[],int len, InputStream is) throws IOException {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
-  static private long skipForward(InputStream is, long toSkip) throws IOException {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
 }
 class UnknownContentHandler extends ContentHandler {
   static final ContentHandler INSTANCE;

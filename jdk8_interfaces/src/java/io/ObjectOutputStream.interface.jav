@@ -2,30 +2,15 @@ package java.io;
 
 import java.io.ObjectStreamClass.WeakClassKey;
 import java.lang.ref.ReferenceQueue;
-import java.util.List;
 import java.util.concurrent.ConcurrentMap;
-import java.io.SerialCallbackContext;
 
 public class ObjectOutputStream extends OutputStream implements ObjectOutput, ObjectStreamConstants {
   private static class Caches {
     static final ConcurrentMap<WeakClassKey, Boolean> subclassAudits;
     static final ReferenceQueue<Class<?>> subclassAuditsQueue;
   }
-  private final BlockDataOutputStream bout;
-  private final HandleTable handles;
-  private final ReplaceTable subs;
-  private int protocol;
-  private int depth;
-  private byte [] primVals;
-  private final boolean enableOverride;
-  private boolean enableReplace;
-  private SerialCallbackContext curContext;
-  private PutFieldImpl curPut;
-  private final DebugTraceInfoStack debugInfoStack;
-  private static final boolean extendedDebugInfo;
   public ObjectOutputStream(OutputStream out) throws IOException{
-  }
-  protected ObjectOutputStream( ) throws IOException, SecurityException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void useProtocolVersion(int version) throws IOException {
                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
@@ -33,9 +18,6 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
   public final void writeObject(Object obj) throws IOException {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
-  protected void writeObjectOverride(Object obj) throws IOException {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
   public void writeUnshared(Object obj) throws IOException {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
@@ -51,24 +33,6 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
   public void reset( ) throws IOException {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
-  protected void annotateClass(Class<?> cl) throws IOException {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
-  protected void annotateProxyClass(Class<?> cl) throws IOException {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
-  protected Object replaceObject(Object obj) throws IOException {
-                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                }
-  protected boolean enableReplaceObject(boolean enable) throws SecurityException {
-                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                 }
-  protected void writeStreamHeader( ) throws IOException {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
-  protected void writeClassDescriptor(ObjectStreamClass desc) throws IOException {
-                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                 }
   public void write(int val) throws IOException {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
@@ -81,9 +45,6 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
   public void flush( ) throws IOException {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
-  protected void drain( ) throws IOException {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   public void close( ) throws IOException {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
@@ -138,70 +99,9 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
   void writeTypeString(String str) throws IOException {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
-  private void verifySubclass( ) {
-                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                 }
-  private static boolean auditSubclass(final Class<?> subcl) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private void clear( ) {
-                          throw new java . lang . RuntimeException ("Implementation stripped");
-                        }
-  private void writeObject0(Object obj, boolean unshared) throws IOException {
-                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                             }
-  private void writeNull( ) throws IOException {
-                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                               }
-  private void writeHandle(int handle) throws IOException {
-                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                          }
-  private void writeClass(Class<?> cl, boolean unshared) throws IOException {
-                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                            }
-  private void writeClassDesc(ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private boolean isCustomSubclass( ) {
-                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                      }
-  private void writeProxyDesc(ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private void writeNonProxyDesc(ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                              }
-  private void writeString(String str, boolean unshared) throws IOException {
-                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                            }
-  private void writeArray(Object array,ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                    }
-  private void writeEnum(Enum<?> en,ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                 }
-  private void writeOrdinaryObject(Object obj,ObjectStreamClass desc, boolean unshared) throws IOException {
-                                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                           }
-  private void writeExternalData(Externalizable obj) throws IOException {
-                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                        }
-  private void writeSerialData(Object obj, ObjectStreamClass desc) throws IOException {
-                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                      }
-  private void defaultWriteFields(Object obj, ObjectStreamClass desc) throws IOException {
-                                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                         }
-  private void writeFatalException(IOException ex) throws IOException {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private static native void floatsToBytes(float [] src,int srcpos,byte [] dst,int dstpos, int nfloats) ;
-  private static native void doublesToBytes(double [] src,int srcpos,byte [] dst,int dstpos, int ndoubles) ;
   private class PutFieldImpl extends PutField {
-    private final ObjectStreamClass desc;
-    private final byte [] primVals;
-    private final Object [] objVals;
     PutFieldImpl(ObjectStreamClass desc) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void put(String name, boolean val) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -236,22 +136,10 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     void writeFields( ) throws IOException {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
-    private int getFieldOffset(String name, Class<?> type) {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
   }
   private static class BlockDataOutputStream extends OutputStream implements DataOutput {
-    private static final int MAX_BLOCK_SIZE;
-    private static final int MAX_HEADER_SIZE;
-    private static final int CHAR_BUF_SIZE;
-    private final byte [] buf;
-    private final byte [] hbuf;
-    private final char [] cbuf;
-    private boolean blkmode;
-    private int pos;
-    private final OutputStream out;
-    private final DataOutputStream dout;
     BlockDataOutputStream(OutputStream out) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     boolean setBlockDataMode(boolean mode) throws IOException {
                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -280,9 +168,6 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     void drain( ) throws IOException {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
-    private void writeBlockHeader(int len) throws IOException {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
     public void writeBoolean(boolean v) throws IOException {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
@@ -349,18 +234,10 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     void writeLongUTF(String s, long utflen) throws IOException {
                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                 }
-    private void writeUTFBody(String s) throws IOException {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
   }
   private static class HandleTable {
-    private int size;
-    private int threshold;
-    private final float loadFactor;
-    private int [] spine;
-    private int [] next;
-    private Object [] objs;
     HandleTable(int initialCapacity, float loadFactor) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     int assign(Object obj) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -374,23 +251,10 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     int size( ) {
                   throw new java . lang . RuntimeException ("Implementation stripped");
                 }
-    private void insert(Object obj, int handle) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
-    private void growSpine( ) {
-                                throw new java . lang . RuntimeException ("Implementation stripped");
-                              }
-    private void growEntries( ) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
-    private int hash(Object obj) {
-                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                 }
   }
   private static class ReplaceTable {
-    private final HandleTable htab;
-    private Object [] reps;
     ReplaceTable(int initialCapacity, float loadFactor) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     void assign(Object obj, Object rep) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -404,13 +268,10 @@ public class ObjectOutputStream extends OutputStream implements ObjectOutput, Ob
     int size( ) {
                   throw new java . lang . RuntimeException ("Implementation stripped");
                 }
-    private void grow( ) {
-                           throw new java . lang . RuntimeException ("Implementation stripped");
-                         }
   }
   private static class DebugTraceInfoStack {
-    private final List<String> stack;
     DebugTraceInfoStack( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     void clear( ) {
                     throw new java . lang . RuntimeException ("Implementation stripped");

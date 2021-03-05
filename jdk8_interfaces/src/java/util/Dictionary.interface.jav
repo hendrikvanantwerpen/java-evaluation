@@ -3,6 +3,7 @@ package java.util;
 
 public abstract class Dictionary<K,V> {
   public Dictionary( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   abstract public int size( ) ;
   abstract public boolean isEmpty( ) ;

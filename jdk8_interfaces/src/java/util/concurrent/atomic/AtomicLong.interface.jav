@@ -2,21 +2,14 @@ package java.util.concurrent.atomic;
 
 import java.util.function.LongUnaryOperator;
 import java.util.function.LongBinaryOperator;
-import sun.misc.Unsafe;
 
 public class AtomicLong extends Number implements java. io. Serializable {
-  private static final long serialVersionUID;
-  private static final Unsafe unsafe;
-  private static final long valueOffset;
   static final boolean VM_SUPPORTS_LONG_CAS;
-  private static native boolean VMSupportsCS8( ) ;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
-  private volatile long value;
   public AtomicLong(long initialValue) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AtomicLong( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public final long get( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");

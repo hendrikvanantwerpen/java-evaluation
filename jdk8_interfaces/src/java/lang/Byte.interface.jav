@@ -9,12 +9,7 @@ public final class Byte extends Number implements Comparable<Byte> {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
   private static class ByteCache {
-    private ByteCache( ) {
-    }
     static final Byte cache[];
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
   }
   public static Byte valueOf(byte b) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -34,10 +29,11 @@ public final class Byte extends Number implements Comparable<Byte> {
   public static Byte decode(String nm) throws NumberFormatException {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
-  private final byte value;
   public Byte(byte value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Byte(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public byte byteValue( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -83,5 +79,4 @@ public final class Byte extends Number implements Comparable<Byte> {
                                             }
   public static final int SIZE;
   public static final int BYTES;
-  private static final long serialVersionUID;
 }

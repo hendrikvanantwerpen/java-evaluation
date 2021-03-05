@@ -3,9 +3,6 @@ package java.text;
 import java.io.Serializable;
 
 public abstract class Format implements Serializable, Cloneable {
-  private static final long serialVersionUID;
-  protected Format( ) {
-  }
   public final String format(Object obj) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
@@ -33,10 +30,6 @@ public abstract class Format implements Serializable, Cloneable {
                                                                                                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                                                                }
   public static class Field extends AttributedCharacterIterator. Attribute {
-    private static final long serialVersionUID;
-    protected Field(String name) {
-      super(name);
-    }
   }
   interface FieldDelegate {
     public void formatted(Format. Field attr,Object value,int start,int end, StringBuffer buffer) ;

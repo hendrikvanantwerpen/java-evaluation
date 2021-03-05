@@ -19,6 +19,5 @@ public interface Collector<T,A,R> {
                                                                                                                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                                                                                          }
   enum Characteristics {
-    CONCURRENT, UNORDERED, IDENTITY_FINISH
   }
 }

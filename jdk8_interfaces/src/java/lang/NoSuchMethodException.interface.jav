@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class NoSuchMethodException extends ReflectiveOperationException {
-  private static final long serialVersionUID;
   public NoSuchMethodException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public NoSuchMethodException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

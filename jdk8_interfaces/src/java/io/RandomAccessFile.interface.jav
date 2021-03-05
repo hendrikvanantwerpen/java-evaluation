@@ -3,20 +3,11 @@ package java.io;
 import java.nio.channels.FileChannel;
 
 public class RandomAccessFile implements DataOutput, DataInput, Closeable {
-  private FileDescriptor fd;
-  private FileChannel channel;
-  private boolean rw;
-  private final String path;
-  private Object closeLock;
-  private volatile boolean closed;
-  private static final int O_RDONLY;
-  private static final int O_RDWR;
-  private static final int O_SYNC;
-  private static final int O_DSYNC;
   public RandomAccessFile(String name, String mode) throws FileNotFoundException{
-    this(name != null ? new File (name) : null, mode);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public RandomAccessFile(File file, String mode) throws FileNotFoundException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public final FileDescriptor getFD( ) throws IOException {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -24,15 +15,9 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
   public final FileChannel getChannel( ) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private native void open0(String name, int mode) throws FileNotFoundException ;
-  private void open(String name, int mode) throws FileNotFoundException {
-                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                        }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private native int read0( ) throws IOException ;
-  private native int readBytes(byte b[],int off, int len) throws IOException ;
   public int read(byte b[],int off, int len) throws IOException {
                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                 }
@@ -51,8 +36,6 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
   public void write(int b) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
-  private native void write0(int b) throws IOException ;
-  private native void writeBytes(byte b[],int off, int len) throws IOException ;
   public void write(byte b[]) throws IOException {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
@@ -63,7 +46,6 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
   public void seek(long pos) throws IOException {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
-  private native void seek0(long pos) throws IOException ;
   public native long length( ) throws IOException ;
   public native void setLength(long newLength) throws IOException ;
   public void close( ) throws IOException {
@@ -138,9 +120,4 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
   public final void writeUTF(String str) throws IOException {
                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                             }
-  private static native void initIDs( ) ;
-  private native void close0( ) throws IOException ;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
 }

@@ -1,54 +1,58 @@
 package java.lang;
 
-import java.io.ObjectStreamField;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Comparator;
 import java.util.Locale;
 
 public final class String implements java. io. Serializable, Comparable<String>, CharSequence {
-  private final char value[];
-  private int hash;
-  private static final long serialVersionUID;
-  private static final ObjectStreamField [] serialPersistentFields;
   public String( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(String original) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(char value[]) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(char value[],int offset, int count) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(int [] codePoints,int offset, int count) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public String(byte ascii[],int hibyte,int offset, int count) {
+  public String(byte ascii[],int hibyte,int offset, int count) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public String(byte ascii[], int hibyte) {
-    this(ascii, hibyte, 0, ascii.length);
+  public String(byte ascii[], int hibyte) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static void checkBounds(byte [] bytes,int offset, int length) {
-                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                        }
   public String(byte bytes[],int offset,int length, String charsetName) throws UnsupportedEncodingException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(byte bytes[],int offset,int length, Charset charset) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(byte bytes[], String charsetName) throws UnsupportedEncodingException{
-    this(bytes, 0, bytes.length, charsetName);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(byte bytes[], Charset charset) {
-    this(bytes, 0, bytes.length, charset);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(byte bytes[],int offset, int length) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(byte bytes[]) {
-    this(bytes, 0, bytes.length);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(StringBuffer buffer) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String(StringBuilder builder) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   String(char [] value, boolean share) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public int length( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -95,9 +99,6 @@ public final class String implements java. io. Serializable, Comparable<String>,
   public boolean contentEquals(StringBuffer sb) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
-  private boolean nonSyncContentEquals(AbstractStringBuilder sb) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
   public boolean contentEquals(CharSequence cs) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
@@ -109,13 +110,9 @@ public final class String implements java. io. Serializable, Comparable<String>,
                                              }
   public static final Comparator<String> CASE_INSENSITIVE_ORDER;
   private static class CaseInsensitiveComparator implements Comparator<String>, java. io. Serializable {
-    private static final long serialVersionUID;
     public int compare(String s1, String s2) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
-    private Object readResolve( ) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
   }
   public int compareToIgnoreCase(String str) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
@@ -144,18 +141,12 @@ public final class String implements java. io. Serializable, Comparable<String>,
   public int indexOf(int ch, int fromIndex) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
-  private int indexOfSupplementary(int ch, int fromIndex) {
-                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                          }
   public int lastIndexOf(int ch) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
   public int lastIndexOf(int ch, int fromIndex) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
-  private int lastIndexOfSupplementary(int ch, int fromIndex) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
   public int indexOf(String str) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }

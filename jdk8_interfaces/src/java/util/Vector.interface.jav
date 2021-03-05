@@ -1,26 +1,21 @@
 package java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, java. io. Serializable {
-  protected Object [] elementData;
-  protected int elementCount;
-  protected int capacityIncrement;
-  private static final long serialVersionUID;
   public Vector(int initialCapacity, int capacityIncrement) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Vector(int initialCapacity) {
-    this(initialCapacity, 0);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Vector( ) {
-    this(10);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Vector(Collection<? extends E> c) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public synchronized void copyInto(Object [] anArray) {
                                                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -31,16 +26,6 @@ public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess,
   public synchronized void ensureCapacity(int minCapacity) {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
-  private void ensureCapacityHelper(int minCapacity) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
-  private static final int MAX_ARRAY_SIZE;
-  private void grow(int minCapacity) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
-  private static int hugeCapacity(int minCapacity) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
   public synchronized void setSize(int newSize) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
@@ -158,15 +143,6 @@ public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess,
   public synchronized List<E> subList(int fromIndex, int toIndex) {
                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                   }
-  protected synchronized void removeRange(int fromIndex, int toIndex) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
   public synchronized ListIterator<E> listIterator(int index) {
                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                               }
@@ -198,7 +174,7 @@ public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess,
   }
   final class ListItr extends Itr implements ListIterator<E> {
     ListItr(int index) {
-      super( );
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public boolean hasPrevious( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
@@ -235,16 +211,9 @@ public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess,
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
   static final class VectorSpliterator<E> implements Spliterator<E> {
-    private final Vector<E> list;
-    private Object [] array;
-    private int index;
-    private int fence;
-    private int expectedModCount;
     VectorSpliterator(Vector<E> list,Object [] array,int origin,int fence, int expectedModCount) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    private int getFence( ) {
-                              throw new java . lang . RuntimeException ("Implementation stripped");
-                            }
     public Spliterator<E> trySplit( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }

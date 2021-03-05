@@ -1,33 +1,10 @@
 package java.lang.reflect;
 
-import sun.reflect.FieldAccessor;
-import sun.reflect.generics.repository.FieldRepository;
-import sun.reflect.generics.factory.GenericsFactory;
 import java.lang.annotation.Annotation;
-import java.util.Map;
 
 public final class Field extends AccessibleObject implements Member {
-  private Class<?> clazz;
-  private int slot;
-  private String name;
-  private Class<?> type;
-  private int modifiers;
-  private transient String signature;
-  private transient FieldRepository genericInfo;
-  private byte [] annotations;
-  private FieldAccessor fieldAccessor;
-  private FieldAccessor overrideFieldAccessor;
-  private Field root;
-  private String getGenericSignature( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
-  private GenericsFactory getFactory( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
-  private FieldRepository getGenericInfo( ) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
   Field(Class<?> declaringClass,String name,Class<?> type,int modifiers,int slot,String signature, byte [] annotations) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   Field copy( ) {
                   throw new java . lang . RuntimeException ("Implementation stripped");
@@ -119,18 +96,6 @@ public final class Field extends AccessibleObject implements Member {
   public void setDouble(Object obj, double d) throws IllegalArgumentException, IllegalAccessException {
                                                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                       }
-  private FieldAccessor getFieldAccessor(Object obj) throws IllegalAccessException {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
-  private FieldAccessor acquireFieldAccessor(boolean overrideFinalCheck) {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
-  private FieldAccessor getFieldAccessor(boolean overrideFinalCheck) {
-                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                     }
-  private void setFieldAccessor(FieldAccessor accessor, boolean overrideFinalCheck) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
   public <T extends Annotation> T getAnnotation(Class<T> annotationClass) {
                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                                           }
@@ -140,11 +105,6 @@ public final class Field extends AccessibleObject implements Member {
   public Annotation [] getDeclaredAnnotations( ) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  private transient volatile Map<Class<? extends Annotation>, Annotation> declaredAnnotations;
-  private Map<Class<? extends Annotation>, Annotation> declaredAnnotations( ) {
-                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                              }
-  private native byte [] getTypeAnnotationBytes0( ) ;
   public AnnotatedType getAnnotatedType( ) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }

@@ -2,23 +2,12 @@ package java.io;
 
 
 public class ByteArrayOutputStream extends OutputStream {
-  protected byte buf[];
-  protected int count;
   public ByteArrayOutputStream( ) {
-    this(32);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ByteArrayOutputStream(int size) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureCapacity(int minCapacity) {
-                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                               }
-  private static final int MAX_ARRAY_SIZE;
-  private void grow(int minCapacity) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
-  private static int hugeCapacity(int minCapacity) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
   public synchronized void write(int b) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }

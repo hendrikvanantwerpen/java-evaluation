@@ -2,31 +2,17 @@ package java.lang.reflect;
 
 import sun.reflect.ConstructorAccessor;
 import sun.reflect.generics.repository.ConstructorRepository;
-import sun.reflect.generics.factory.GenericsFactory;
 import java.lang.annotation.Annotation;
 
 public final class Constructor<T> extends Executable {
-  private Class<T> clazz;
-  private int slot;
-  private Class<?> [] parameterTypes;
-  private Class<?> [] exceptionTypes;
-  private int modifiers;
-  private transient String signature;
-  private transient ConstructorRepository genericInfo;
-  private byte [] annotations;
-  private byte [] parameterAnnotations;
-  private GenericsFactory getFactory( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
   ConstructorRepository getGenericInfo( ) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
-  private volatile ConstructorAccessor constructorAccessor;
-  private Constructor<T> root;
   Executable getRoot( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
                         }
   Constructor(Class<T> declaringClass,Class<?> [] parameterTypes,Class<?> [] checkedExceptions,int modifiers,int slot,String signature,byte [] annotations, byte [] parameterAnnotations) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   Constructor<T> copy( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
@@ -91,9 +77,6 @@ public final class Constructor<T> extends Executable {
   public boolean isSynthetic( ) {
                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                 }
-  private ConstructorAccessor acquireConstructorAccessor( ) {
-                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                            }
   ConstructorAccessor getConstructorAccessor( ) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }

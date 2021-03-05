@@ -1,13 +1,7 @@
 package java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.security.AccessControlContext;
-import java.text.DateFormatSymbols;
 import java.time.Instant;
-import java.util.concurrent.ConcurrentMap;
 
 public abstract class Calendar implements Serializable, Cloneable, Comparable<Calendar> {
   public final static int ERA;
@@ -61,26 +55,9 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   public static final int LONG_FORMAT;
   public static final int SHORT_STANDALONE;
   public static final int LONG_STANDALONE;
-  protected int fields[];
-  protected boolean isSet[];
-  transient private int stamp[];
-  protected long time;
-  protected boolean isTimeSet;
-  protected boolean areFieldsSet;
   transient boolean areAllFieldsSet;
-  private boolean lenient;
-  private TimeZone zone;
-  transient private boolean sharedZone;
-  private int firstDayOfWeek;
-  private int minimalDaysInFirstWeek;
-  private static final ConcurrentMap<Locale, int []> cachedLocaleData;
-  private static final int UNSET;
-  private static final int COMPUTED;
-  private static final int MINIMUM_USER_STAMP;
   static final int ALL_FIELDS;
-  private int nextStamp;
   static final int currentSerialVersion;
-  private int serialVersionOnStream;
   static final long serialVersionUID;
   final static int ERA_MASK;
   final static int YEAR_MASK;
@@ -101,18 +78,8 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   final static int ZONE_OFFSET_MASK;
   final static int DST_OFFSET_MASK;
   public static class Builder {
-    private static final int NFIELDS;
-    private static final int WEEK_YEAR;
-    private long instant;
-    private int [] fields;
-    private int nextStamp;
-    private int maxFieldIndex;
-    private String type;
-    private TimeZone zone;
-    private boolean lenient;
-    private Locale locale;
-    private int firstDayOfWeek, minimalDaysInFirstWeek;
     public Builder( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Builder setInstant(long instant) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -156,26 +123,6 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
     public Calendar build( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-    private void allocateFields( ) {
-                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                   }
-    private void internalSet(int field, int value) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
-    private boolean isInstantSet( ) {
-                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                    }
-    private boolean isSet(int index) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
-    private boolean isValidWeekParameter(int value) {
-                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                    }
-  }
-  protected Calendar( ) {
-    this(TimeZone. getDefaultRef( ), Locale. getDefault(Locale.Category.FORMAT));
-  }
-  protected Calendar(TimeZone zone, Locale aLocale) {
   }
   public static Calendar getInstance( ) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -189,14 +136,9 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   public static Calendar getInstance(TimeZone zone, Locale aLocale) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
-  private static Calendar createCalendar(TimeZone zone, Locale aLocale) {
-                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                        }
   public static synchronized Locale [] getAvailableLocales( ) {
                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                               }
-  protected abstract void computeTime( ) ;
-  protected abstract void computeFields( ) ;
   public final Date getTime( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
@@ -212,9 +154,6 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   public int get(int field) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  protected final int internalGet(int field) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   final void internalSet(int field, int value) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
@@ -245,18 +184,9 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   public Map<String, Integer> getDisplayNames(int field,int style, Locale locale) {
                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                   }
-  private Map<String, Integer> getDisplayNamesImpl(int field,int style, Locale locale) {
-                                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                       }
   boolean checkDisplayNameParams(int field,int style,int minStyle,int maxStyle,Locale locale, int fieldMask) {
                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                              }
-  private String [] getFieldStrings(int field,int style, DateFormatSymbols symbols) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
-  protected void complete( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
   final boolean isExternallySet(int field) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
@@ -287,31 +217,10 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   int getBaseStyle(int style) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
-  private int toStandaloneStyle(int style) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private boolean isStandaloneStyle(int style) {
-                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                               }
-  private boolean isNarrowStyle(int style) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private boolean isNarrowFormatStyle(int style) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
-  private static int aggregateStamp(int stamp_a, int stamp_b) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
   public static Set<String> getAvailableCalendarTypes( ) {
                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                          }
   private static class AvailableCalendarTypes {
-    private static final Set<String> SET;
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
-    private AvailableCalendarTypes( ) {
-    }
   }
   public String getCalendarType( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
@@ -391,48 +300,14 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private static final String [] FIELD_NAME;
   static String getFieldName(int field) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static void appendValue(StringBuilder sb,String item,boolean valid, long value) {
-                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                          }
-  private void setWeekCountData(Locale desiredLocale) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
-  private void updateTime( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
-  private int compareTo(long t) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
-  private static long getMillisOf(Calendar calendar) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
-  private void adjustStamp( ) {
-                                throw new java . lang . RuntimeException ("Implementation stripped");
-                              }
-  private void invalidateWeekFields( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private synchronized void writeObject(ObjectOutputStream stream) throws IOException {
-                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                      }
   private static class CalendarAccessControlContext {
-    private static final AccessControlContext INSTANCE;
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
-    private CalendarAccessControlContext( ) {
-    }
   }
-  private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
-                                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                               }
   public final Instant toInstant( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }

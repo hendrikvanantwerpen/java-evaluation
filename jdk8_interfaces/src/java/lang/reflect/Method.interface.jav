@@ -2,34 +2,14 @@ package java.lang.reflect;
 
 import sun.reflect.MethodAccessor;
 import sun.reflect.generics.repository.MethodRepository;
-import sun.reflect.generics.factory.GenericsFactory;
 import java.lang.annotation.Annotation;
 
 public final class Method extends Executable {
-  private Class<?> clazz;
-  private int slot;
-  private String name;
-  private Class<?> returnType;
-  private Class<?> [] parameterTypes;
-  private Class<?> [] exceptionTypes;
-  private int modifiers;
-  private transient String signature;
-  private transient MethodRepository genericInfo;
-  private byte [] annotations;
-  private byte [] parameterAnnotations;
-  private byte [] annotationDefault;
-  private volatile MethodAccessor methodAccessor;
-  private Method root;
-  private String getGenericSignature( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
-  private GenericsFactory getFactory( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
   MethodRepository getGenericInfo( ) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
   Method(Class<?> declaringClass,String name,Class<?> [] parameterTypes,Class<?> returnType,Class<?> [] checkedExceptions,int modifiers,int slot,String signature,byte [] annotations,byte [] parameterAnnotations, byte [] annotationDefault) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   Method copy( ) {
                    throw new java . lang . RuntimeException ("Implementation stripped");
@@ -109,9 +89,6 @@ public final class Method extends Executable {
   public boolean isDefault( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
-  private MethodAccessor acquireMethodAccessor( ) {
-                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                  }
   MethodAccessor getMethodAccessor( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }

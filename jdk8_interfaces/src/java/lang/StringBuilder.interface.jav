@@ -4,16 +4,16 @@ package java.lang;
 public final class StringBuilder extends AbstractStringBuilder implements java. io. Serializable, CharSequence {
   static final long serialVersionUID;
   public StringBuilder( ) {
-    super(16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuilder(int capacity) {
-    super(capacity);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuilder(String str) {
-    super(str. length( ) + 16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuilder(CharSequence seq) {
-    this(seq. length( ) + 16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuilder append(Object obj) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -120,10 +120,4 @@ public final class StringBuilder extends AbstractStringBuilder implements java. 
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
 }

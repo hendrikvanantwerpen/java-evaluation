@@ -1,68 +1,36 @@
 package java.io;
 
-import java.util.Formatter;
 import java.util.Locale;
-import java.nio.charset.Charset;
 
 public class PrintStream extends FilterOutputStream implements Appendable, Closeable {
-  private final boolean autoFlush;
-  private boolean trouble;
-  private Formatter formatter;
-  private BufferedWriter textOut;
-  private OutputStreamWriter charOut;
-  private static <T> T requireNonNull(T obj, String message) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private static Charset toCharset(String csn) throws UnsupportedEncodingException {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
-  private PrintStream(boolean autoFlush, OutputStream out) {
-    super(out);
-  }
-  private PrintStream(boolean autoFlush,OutputStream out, Charset charset) {
-    super(out);
-  }
-  private PrintStream(boolean autoFlush,Charset charset, OutputStream out) throws UnsupportedEncodingException{
-    this(autoFlush, out, charset);
-  }
   public PrintStream(OutputStream out) {
-    this(out, false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(OutputStream out, boolean autoFlush) {
-    this(autoFlush, requireNonNull(out, "Null output stream"));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(OutputStream out,boolean autoFlush, String encoding) throws UnsupportedEncodingException{
-    this(autoFlush, requireNonNull(out, "Null output stream"), toCharset(encoding));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(String fileName) throws FileNotFoundException{
-    this(false, new FileOutputStream (fileName));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(String fileName, String csn) throws FileNotFoundException, UnsupportedEncodingException{
-    this(false, toCharset(csn), new FileOutputStream (fileName));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(File file) throws FileNotFoundException{
-    this(false, new FileOutputStream (file));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintStream(File file, String csn) throws FileNotFoundException, UnsupportedEncodingException{
-    this(false, toCharset(csn), new FileOutputStream (file));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureOpen( ) throws IOException {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public void flush( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
-  private boolean closing;
   public void close( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
   public boolean checkError( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
-  protected void setError( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
-  protected void clearError( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
   public void write(int b) {
@@ -71,15 +39,6 @@ public class PrintStream extends FilterOutputStream implements Appendable, Close
   public void write(byte buf[],int off, int len) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  private void write(char buf[]) {
-                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                 }
-  private void write(String s) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
-  private void newLine( ) {
-                            throw new java . lang . RuntimeException ("Implementation stripped");
-                          }
   public void print(boolean b) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }

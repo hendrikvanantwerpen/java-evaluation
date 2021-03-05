@@ -6,25 +6,6 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReadWriteLock;
 
 public class StampedLock implements java. io. Serializable {
-  private static final long serialVersionUID;
-  private static final int NCPU;
-  private static final int SPINS;
-  private static final int HEAD_SPINS;
-  private static final int MAX_HEAD_SPINS;
-  private static final int OVERFLOW_YIELD_RATE;
-  private static final int LG_READERS;
-  private static final long RUNIT;
-  private static final long WBIT;
-  private static final long RBITS;
-  private static final long RFULL;
-  private static final long ABITS;
-  private static final long SBITS;
-  private static final long ORIGIN;
-  private static final long INTERRUPTED;
-  private static final int WAITING;
-  private static final int CANCELLED;
-  private static final int RMODE;
-  private static final int WMODE;
   static final class WNode {
     volatile WNode prev;
     volatile WNode next;
@@ -33,16 +14,14 @@ public class StampedLock implements java. io. Serializable {
     volatile int status;
     final int mode;
     WNode(int m, WNode p) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
   }
-  private transient volatile WNode whead;
-  private transient volatile WNode wtail;
   transient ReadLockView readLockView;
   transient WriteLockView writeLockView;
   transient ReadWriteLockView readWriteLockView;
-  private transient volatile long state;
-  private transient int readerOverflow;
   public StampedLock( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public long writeLock( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -98,9 +77,6 @@ public class StampedLock implements java. io. Serializable {
   public boolean tryUnlockRead( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private int getReadLockCount(long s) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
   public boolean isWriteLocked( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
@@ -176,36 +152,4 @@ public class StampedLock implements java. io. Serializable {
   final void unstampedUnlockRead( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
-  private long tryIncReaderOverflow(long s) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
-  private long tryDecReaderOverflow(long s) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
-  private void release(WNode h) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
-  private long acquireWrite(boolean interruptible, long deadline) {
-                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                  }
-  private long acquireRead(boolean interruptible, long deadline) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
-  private long cancelWaiter(WNode node,WNode group, boolean interrupted) {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
-  private static final sun. misc. Unsafe U;
-  private static final long STATE;
-  private static final long WHEAD;
-  private static final long WTAIL;
-  private static final long WNEXT;
-  private static final long WSTATUS;
-  private static final long WCOWAIT;
-  private static final long PARKBLOCKER;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
 }

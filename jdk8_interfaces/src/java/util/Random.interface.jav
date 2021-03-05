@@ -1,43 +1,27 @@
 package java.util;
 
 import java.io.*;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.DoubleConsumer;
 import java.util.function.IntConsumer;
 import java.util.function.LongConsumer;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
-import sun.misc.Unsafe;
 
 public class Random implements java. io. Serializable {
   static final long serialVersionUID;
-  private final AtomicLong seed;
-  private static final long multiplier;
-  private static final long addend;
-  private static final long mask;
-  private static final double DOUBLE_UNIT;
   static final String BadBound;
   static final String BadRange;
   static final String BadSize;
   public Random( ) {
-    this(seedUniquifier( ) ^ System. nanoTime( ));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static long seedUniquifier( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
-  private static final AtomicLong seedUniquifier;
   public Random(long seed) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static long initialScramble(long seed) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
   synchronized public void setSeed(long seed) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
-  protected int next(int bits) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
   public void nextBytes(byte [] bytes) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
@@ -68,8 +52,6 @@ public class Random implements java. io. Serializable {
   public double nextDouble( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
-  private double nextNextGaussian;
-  private boolean haveNextNextGaussian;
   synchronized public double nextGaussian( ) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
@@ -116,6 +98,7 @@ public class Random implements java. io. Serializable {
     final int origin;
     final int bound;
     RandomIntsSpliterator(Random rng,long index,long fence,int origin, int bound) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public RandomIntsSpliterator trySplit( ) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
@@ -140,6 +123,7 @@ public class Random implements java. io. Serializable {
     final long origin;
     final long bound;
     RandomLongsSpliterator(Random rng,long index,long fence,long origin, long bound) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public RandomLongsSpliterator trySplit( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -164,6 +148,7 @@ public class Random implements java. io. Serializable {
     final double origin;
     final double bound;
     RandomDoublesSpliterator(Random rng,long index,long fence,double origin, double bound) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public RandomDoublesSpliterator trySplit( ) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
@@ -181,19 +166,4 @@ public class Random implements java. io. Serializable {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                           }
   }
-  private static final ObjectStreamField [] serialPersistentFields;
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
-  synchronized private void writeObject(ObjectOutputStream s) throws IOException {
-                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                 }
-  private static final Unsafe unsafe;
-  private static final long seedOffset;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
-  private void resetSeed(long seedVal) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
 }

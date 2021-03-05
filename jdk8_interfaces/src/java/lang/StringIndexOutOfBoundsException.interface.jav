@@ -2,14 +2,13 @@ package java.lang;
 
 
 public class StringIndexOutOfBoundsException extends IndexOutOfBoundsException {
-  private static final long serialVersionUID;
   public StringIndexOutOfBoundsException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringIndexOutOfBoundsException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringIndexOutOfBoundsException(int index) {
-    super("String index out of range: " + index);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

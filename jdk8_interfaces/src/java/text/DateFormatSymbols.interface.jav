@@ -1,18 +1,14 @@
 package java.text;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.lang.ref.SoftReference;
 import java.util.Locale;
-import java.util.concurrent.ConcurrentMap;
 
 public class DateFormatSymbols implements Serializable, Cloneable {
   public DateFormatSymbols( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public DateFormatSymbols(Locale locale) {
-  }
-  private DateFormatSymbols(boolean flag) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   String eras[];
   String months[];
@@ -61,9 +57,6 @@ public class DateFormatSymbols implements Serializable, Cloneable {
   static final DateFormatSymbols getInstanceRef(Locale locale) {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
-  private static DateFormatSymbols getProviderInstance(Locale locale) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
   public String [] getEras( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
@@ -122,31 +115,11 @@ public class DateFormatSymbols implements Serializable, Cloneable {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
   static final int millisPerHour;
-  private static final ConcurrentMap<Locale, SoftReference<DateFormatSymbols>> cachedInstances;
-  private transient int lastZoneIndex;
   transient volatile int cachedHashCode;
-  private void initializeData(Locale locale) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
-  private static String [] toOneBasedArray(String [] src) {
-                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                          }
   final int getZoneIndex(String ID) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
   final String [] [] getZoneStringsWrapper( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
-  private String [] [] getZoneStringsImpl(boolean needsCopy) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private boolean isSubclassObject( ) {
-                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                      }
-  private void copyMembers(DateFormatSymbols src, DateFormatSymbols dst) {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
-  private void writeObject(ObjectOutputStream stream) throws IOException {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
 }

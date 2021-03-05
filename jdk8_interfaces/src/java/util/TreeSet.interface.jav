@@ -2,21 +2,20 @@ package java.util;
 
 
 public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Cloneable, java. io. Serializable {
-  private transient NavigableMap<E, Object> m;
-  private static final Object PRESENT;
   TreeSet(NavigableMap<E, Object> m) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeSet( ) {
-    this(new TreeMap <E, Object>( ));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeSet(Comparator<? super E> comparator) {
-    this(new TreeMap <>(comparator));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeSet(Collection<? extends E> c) {
-    this( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public TreeSet(SortedSet<E> s) {
-    this(s. comparator( ));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Iterator<E> iterator( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
@@ -96,14 +95,7 @@ public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Clone
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
   public Spliterator<E> spliterator( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
-  private static final long serialVersionUID;
 }

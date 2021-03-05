@@ -7,8 +7,10 @@ public class SequenceInputStream extends InputStream {
   Enumeration<? extends InputStream> e;
   InputStream in;
   public SequenceInputStream(Enumeration<? extends InputStream> e) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SequenceInputStream(InputStream s1, InputStream s2) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   final void nextStream( ) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");

@@ -3,16 +3,15 @@ package java.lang;
 
 public class IllegalArgumentException extends RuntimeException {
   public IllegalArgumentException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IllegalArgumentException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IllegalArgumentException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IllegalArgumentException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static final long serialVersionUID;
 }

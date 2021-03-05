@@ -2,10 +2,11 @@ package java.io;
 
 
 public class StringWriter extends Writer {
-  private StringBuffer buf;
   public StringWriter( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringWriter(int initialSize) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void write(int c) {
                              throw new java . lang . RuntimeException ("Implementation stripped");

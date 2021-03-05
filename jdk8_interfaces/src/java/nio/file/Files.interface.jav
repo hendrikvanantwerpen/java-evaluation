@@ -2,7 +2,6 @@ package java.nio.file;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -14,7 +13,6 @@ import java.nio.file.attribute.FileAttributeView;
 import java.nio.file.attribute.FileTime;
 import java.nio.file.attribute.PosixFilePermission;
 import java.nio.file.attribute.UserPrincipal;
-import java.nio.file.spi.FileSystemProvider;
 import java.nio.file.spi.FileTypeDetector;
 import java.util.List;
 import java.util.Map;
@@ -23,14 +21,6 @@ import java.util.function.BiPredicate;
 import java.util.stream.Stream;
 
 public final class Files {
-  private Files( ) {
-  }
-  private static FileSystemProvider provider(Path path) {
-                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                        }
-  private static Runnable asUncheckedRunnable(Closeable c) {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
   public static InputStream newInputStream(Path path, OpenOption ... options) throws IOException {
                                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                  }
@@ -44,8 +34,6 @@ public final class Files {
                                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                          }
   private static class AcceptAllFilter implements DirectoryStream. Filter<Path> {
-    private AcceptAllFilter( ) {
-    }
     public boolean accept(Path entry) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
@@ -69,9 +57,6 @@ public final class Files {
   public static Path createDirectories(Path dir, FileAttribute<?> ... attrs) throws IOException {
                                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                 }
-  private static void createAndCheckIsDirectory(Path dir, FileAttribute<?> ... attrs) throws IOException {
-                                                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                         }
   public static Path createTempFile(Path dir,String prefix,String suffix, FileAttribute<?> ... attrs) throws IOException {
                                                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                          }
@@ -117,12 +102,6 @@ public final class Files {
   private static class FileTypeDetectors {
     static final FileTypeDetector defaultFileTypeDetector;
     static final List<FileTypeDetector> installeDetectors;
-    private static FileTypeDetector createDefaultFileTypeDetector( ) {
-                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                     }
-    private static List<FileTypeDetector> loadInstalledDetectors( ) {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
   }
   public static String probeContentType(Path path) throws IOException {
                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
@@ -172,18 +151,12 @@ public final class Files {
   public static long size(Path path) throws IOException {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                                         }
-  private static boolean followLinks(LinkOption ... options) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
   public static boolean exists(Path path, LinkOption ... options) {
                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                   }
   public static boolean notExists(Path path, LinkOption ... options) {
                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                      }
-  private static boolean isAccessible(Path path, AccessMode ... modes) {
-                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                       }
   public static boolean isReadable(Path path) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
@@ -199,7 +172,6 @@ public final class Files {
   public static Path walkFileTree(Path start, FileVisitor<? super Path> visitor) throws IOException {
                                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                     }
-  private static final int BUFFER_SIZE;
   public static BufferedReader newBufferedReader(Path path, Charset cs) throws IOException {
                                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                            }
@@ -212,19 +184,12 @@ public final class Files {
   public static BufferedWriter newBufferedWriter(Path path, OpenOption ... options) throws IOException {
                                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                        }
-  private static long copy(InputStream source, OutputStream sink) throws IOException {
-                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                     }
   public static long copy(InputStream in,Path target, CopyOption ... options) throws IOException {
                                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                  }
   public static long copy(Path source, OutputStream out) throws IOException {
                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                                             }
-  private static final int MAX_BUFFER_SIZE;
-  private static byte [] read(InputStream source, int initialSize) throws IOException {
-                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                      }
   public static byte [] readAllBytes(Path path) throws IOException {
                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                                    }

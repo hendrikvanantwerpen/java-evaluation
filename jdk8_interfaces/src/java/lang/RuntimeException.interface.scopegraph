@@ -1,0 +1,175 @@
+scope graph
+  #/./java/lang/RuntimeException.interface.jav-s_cls_4-0 {
+    relations {
+      java/names/MethodNames!mthd : (Id("<init>"), [REF(#/./java/lang/String.interface.jav-s_cls_4-0), REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0), BOOLEAN(), BOOLEAN()], #/./java/lang/RuntimeException.interface.jav-s_mthd_90-0)
+                                    (Id("<init>"), [REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0)], #/./java/lang/RuntimeException.interface.jav-s_mthd_266-0)
+                                    (Id("<init>"), [], #/./java/lang/RuntimeException.interface.jav-s_mthd_689-0)
+                                    (Id("<init>"), [REF(#/./java/lang/String.interface.jav-s_cls_4-0), REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0)], #/./java/lang/RuntimeException.interface.jav-s_mthd_395-0)
+                                    (Id("<init>"), [REF(#/./java/lang/String.interface.jav-s_cls_4-0)], #/./java/lang/RuntimeException.interface.jav-s_mthd_557-0)
+      java/names/TypeNames!thisType : (Id("RuntimeException"), #/./java/lang/RuntimeException.interface.jav-s_cls_4-0)
+      java/types/Main!withKind : CLASS()
+      java/names/ExpressionNames!var : (Id("serialVersionUID"), #/./java/lang/RuntimeException.interface.jav-s_var_710-0)
+      java/types/Main!withType : REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0)
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cu_1-0
+      java/names/Main!EXT : #/./java/lang/Exception.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_ctor_5-0 {
+    relations {
+      java/names/ExpressionNames!var : (Id("enableSuppression"), #/./java/lang/RuntimeException.interface.jav-s_var_130-0)
+                                       (Id("writableStackTrace"), #/./java/lang/RuntimeException.interface.jav-s_var_111-0)
+                                       (Id("cause"), #/./java/lang/RuntimeException.interface.jav-s_var_137-0)
+                                       (Id("message"), #/./java/lang/RuntimeException.interface.jav-s_var_151-0)
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_ctor_308-0 {
+    relations {
+      java/names/ExpressionNames!var : (Id("message"), #/./java/lang/RuntimeException.interface.jav-s_var_441-0)
+                                       (Id("cause"), #/./java/lang/RuntimeException.interface.jav-s_var_416-0)
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_ctor_179-0 {
+    relations {
+      java/names/ExpressionNames!var : (Id("cause"), #/./java/lang/RuntimeException.interface.jav-s_var_284-0)
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_ctor_469-0 {
+    relations {
+      java/names/ExpressionNames!var : (Id("message"), #/./java/lang/RuntimeException.interface.jav-s_var_575-0)
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_cu_1-0 {
+    relations {
+    }
+    edges {
+      java/names/Main!LEX : #/.-s_prj-0
+      java/names/Main!IMP_OD : #/./java/lang-s_grp-0
+      java/names/Main!IMP_PKG : #/./java/lang-s_grp-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_ctor_601-0 {
+    relations {
+    }
+    edges {
+      java/names/Main!LEX : #/./java/lang/RuntimeException.interface.jav-s_cls_4-0
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_mthd_266-0 {
+    relations {
+      java/names/MethodNames!return : TYPED(REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0))
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_441-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/String.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_mthd_395-0 {
+    relations {
+      java/names/MethodNames!return : TYPED(REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0))
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_416-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_284-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_mthd_557-0 {
+    relations {
+      java/names/MethodNames!return : TYPED(REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0))
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_151-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/String.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_137-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/Throwable.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_710-0 {
+    relations {
+      java/types/Main!withType : LONG()
+    }
+    edges {
+    }
+  }
+  #/./java/lang-s_grp-0 {
+    relations {
+      java/names/TypeNames!type : (Id("RuntimeException"), #/./java/lang/RuntimeException.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_mthd_90-0 {
+    relations {
+      java/names/MethodNames!return : TYPED(REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0))
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_575-0 {
+    relations {
+      java/types/Main!withType : REF(#/./java/lang/String.interface.jav-s_cls_4-0)
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_130-0 {
+    relations {
+      java/types/Main!withType : BOOLEAN()
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_var_111-0 {
+    relations {
+      java/types/Main!withType : BOOLEAN()
+    }
+    edges {
+    }
+  }
+  #/./java/lang/RuntimeException.interface.jav-s_mthd_689-0 {
+    relations {
+      java/names/MethodNames!return : TYPED(REF(#/./java/lang/RuntimeException.interface.jav-s_cls_4-0))
+    }
+    edges {
+    }
+  }

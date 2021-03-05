@@ -3,21 +3,14 @@ package java.io;
 import java.net.URI;
 import java.net.URL;
 import java.net.MalformedURLException;
-import java.security.SecureRandom;
 import java.nio.file.Path;
 
 public class File implements Serializable, Comparable<File> {
-  private static final FileSystem fs;
-  private final String path;
   private static enum PathStatus {
-    INVALID, CHECKED
   }
-  ;
-  private transient PathStatus status;
   final boolean isInvalid( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-  private final transient int prefixLength;
   int getPrefixLength( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
@@ -25,17 +18,17 @@ public class File implements Serializable, Comparable<File> {
   public static final String separator;
   public static final char pathSeparatorChar;
   public static final String pathSeparator;
-  private File(String pathname, int prefixLength) {
-  }
-  private File(String child, File parent) {
-  }
   public File(String pathname) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public File(String parent, String child) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public File(File parent, String child) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public File(URI uri) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String getName( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -64,9 +57,6 @@ public class File implements Serializable, Comparable<File> {
   public File getCanonicalFile( ) throws IOException {
                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                      }
-  private static String slashify(String path, boolean isDirectory) {
-                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                   }
   public URL toURL( ) throws MalformedURLException {
                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                    }
@@ -170,13 +160,9 @@ public class File implements Serializable, Comparable<File> {
                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                 }
   private static class TempDirectory {
-    private TempDirectory( ) {
-    }
-    private static final File tmpdir;
     static File location( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-    private static final SecureRandom random;
     static File generateFile(String prefix,String suffix, File dir) throws IOException {
                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                        }
@@ -199,20 +185,6 @@ public class File implements Serializable, Comparable<File> {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private synchronized void writeObject(java. io. ObjectOutputStream s) throws IOException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private synchronized void readObject(java. io. ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                 }
-  private static final long PATH_OFFSET;
-  private static final long PREFIX_LENGTH_OFFSET;
-  private static final sun. misc. Unsafe UNSAFE;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
-  private static final long serialVersionUID;
-  private volatile transient Path filePath;
   public Path toPath( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
                         }

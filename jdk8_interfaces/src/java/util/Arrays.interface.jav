@@ -16,18 +16,12 @@ import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class Arrays {
-  private static final int MIN_ARRAY_SORT_GRAN;
-  private Arrays( ) {
-  }
   static final class NaturalOrder implements Comparator<Object> {
     public int compare(Object first, Object second) {
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }
     static final NaturalOrder INSTANCE;
   }
-  private static void rangeCheck(int arrayLength,int fromIndex, int toIndex) {
-                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                             }
   public static void sort(int [] a) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
@@ -125,42 +119,19 @@ public class Arrays {
                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                    }
   static final class LegacyMergeSort {
-    private static final boolean userRequested;
   }
   public static void sort(Object [] a) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
-  private static void legacyMergeSort(Object [] a) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
   public static void sort(Object [] a,int fromIndex, int toIndex) {
                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                   }
-  private static void legacyMergeSort(Object [] a,int fromIndex, int toIndex) {
-                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                              }
-  private static final int INSERTIONSORT_THRESHOLD;
-  private static void mergeSort(Object [] src,Object [] dest,int low,int high, int off) {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private static void swap(Object [] x,int a, int b) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
   public static <T> void sort(T [] a, Comparator<? super T> c) {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
-  private static <T> void legacyMergeSort(T [] a, Comparator<? super T> c) {
-                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                           }
   public static <T> void sort(T [] a,int fromIndex,int toIndex, Comparator<? super T> c) {
                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                          }
-  private static <T> void legacyMergeSort(T [] a,int fromIndex,int toIndex, Comparator<? super T> c) {
-                                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                     }
-  private static void mergeSort(Object [] src,Object [] dest,int low,int high,int off, Comparator c) {
-                                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                     }
   public static <T> void parallelPrefix(T [] array, BinaryOperator<T> op) {
                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                                           }
@@ -191,81 +162,54 @@ public class Arrays {
   public static int binarySearch(long [] a,int fromIndex,int toIndex, long key) {
                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                 }
-  private static int binarySearch0(long [] a,int fromIndex,int toIndex, long key) {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
   public static int binarySearch(int [] a, int key) {
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }
   public static int binarySearch(int [] a,int fromIndex,int toIndex, int key) {
                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                                               }
-  private static int binarySearch0(int [] a,int fromIndex,int toIndex, int key) {
-                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                }
   public static int binarySearch(short [] a, short key) {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                                         }
   public static int binarySearch(short [] a,int fromIndex,int toIndex, short key) {
                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                   }
-  private static int binarySearch0(short [] a,int fromIndex,int toIndex, short key) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
   public static int binarySearch(char [] a, char key) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
   public static int binarySearch(char [] a,int fromIndex,int toIndex, char key) {
                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                 }
-  private static int binarySearch0(char [] a,int fromIndex,int toIndex, char key) {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
   public static int binarySearch(byte [] a, byte key) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
   public static int binarySearch(byte [] a,int fromIndex,int toIndex, byte key) {
                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                 }
-  private static int binarySearch0(byte [] a,int fromIndex,int toIndex, byte key) {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
   public static int binarySearch(double [] a, double key) {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                           }
   public static int binarySearch(double [] a,int fromIndex,int toIndex, double key) {
                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                     }
-  private static int binarySearch0(double [] a,int fromIndex,int toIndex, double key) {
-                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                      }
   public static int binarySearch(float [] a, float key) {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                                         }
   public static int binarySearch(float [] a,int fromIndex,int toIndex, float key) {
                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                   }
-  private static int binarySearch0(float [] a,int fromIndex,int toIndex, float key) {
-                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                    }
   public static int binarySearch(Object [] a, Object key) {
                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                           }
   public static int binarySearch(Object [] a,int fromIndex,int toIndex, Object key) {
                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                     }
-  private static int binarySearch0(Object [] a,int fromIndex,int toIndex, Object key) {
-                                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                      }
   public static <T> int binarySearch(T [] a,T key, Comparator<? super T> c) {
                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                                             }
   public static <T> int binarySearch(T [] a,int fromIndex,int toIndex,T key, Comparator<? super T> c) {
                                                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                       }
-  private static <T> int binarySearch0(T [] a,int fromIndex,int toIndex,T key, Comparator<? super T> c) {
-                                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                        }
   public static boolean equals(long [] a, long [] a2) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
@@ -411,9 +355,8 @@ public class Arrays {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
   private static class ArrayList<E> extends AbstractList<E> implements RandomAccess, java. io. Serializable {
-    private static final long serialVersionUID;
-    private final E [] a;
     ArrayList(E [] array) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public int size( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -515,9 +458,6 @@ public class Arrays {
   public static String deepToString(Object [] a) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  private static void deepToString(Object [] a,StringBuilder buf, Set<Object []> dejaVu) {
-                                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                         }
   public static <T> void setAll(T [] array, IntFunction<? extends T> generator) {
                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                 }

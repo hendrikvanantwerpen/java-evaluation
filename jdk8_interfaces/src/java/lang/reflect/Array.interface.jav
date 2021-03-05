@@ -2,8 +2,6 @@ package java.lang.reflect;
 
 
 public final class Array {
-  private Array( ) {
-  }
   public static Object newInstance(Class<?> componentType, int length) throws NegativeArraySizeException {
                                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                          }
@@ -29,6 +27,4 @@ public final class Array {
   public static native void setLong(Object array,int index, long l) throws IllegalArgumentException, ArrayIndexOutOfBoundsException ;
   public static native void setFloat(Object array,int index, float f) throws IllegalArgumentException, ArrayIndexOutOfBoundsException ;
   public static native void setDouble(Object array,int index, double d) throws IllegalArgumentException, ArrayIndexOutOfBoundsException ;
-  private static native Object newArray(Class<?> componentType, int length) throws NegativeArraySizeException ;
-  private static native Object multiNewArray(Class<?> componentType, int [] dimensions) throws IllegalArgumentException, NegativeArraySizeException ;
 }

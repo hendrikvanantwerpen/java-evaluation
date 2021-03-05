@@ -1,8 +1,6 @@
 package java.util.concurrent;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.security.AccessControlContext;
 import java.security.PrivilegedAction;
 import java.security.PrivilegedExceptionAction;
 
@@ -77,54 +75,47 @@ public class Executors {
     final Runnable task;
     final T result;
     RunnableAdapter(Runnable task, T result) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public T call( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
                      }
   }
   static final class PrivilegedCallable<T> implements Callable<T> {
-    private final Callable<T> task;
-    private final AccessControlContext acc;
     PrivilegedCallable(Callable<T> task) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public T call( ) throws Exception {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
   }
   static final class PrivilegedCallableUsingCurrentClassLoader<T> implements Callable<T> {
-    private final Callable<T> task;
-    private final AccessControlContext acc;
-    private final ClassLoader ccl;
     PrivilegedCallableUsingCurrentClassLoader(Callable<T> task) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public T call( ) throws Exception {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
   }
   static class DefaultThreadFactory implements ThreadFactory {
-    private static final AtomicInteger poolNumber;
-    private final ThreadGroup group;
-    private final AtomicInteger threadNumber;
-    private final String namePrefix;
     DefaultThreadFactory( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Thread newThread(Runnable r) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
   }
   static class PrivilegedThreadFactory extends DefaultThreadFactory {
-    private final AccessControlContext acc;
-    private final ClassLoader ccl;
     PrivilegedThreadFactory( ) {
-      super( );
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Thread newThread(final Runnable r) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
   }
   static class DelegatedExecutorService extends AbstractExecutorService {
-    private final ExecutorService e;
     DelegatedExecutorService(ExecutorService executor) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void execute(Runnable command) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -168,16 +159,12 @@ public class Executors {
   }
   static class FinalizableDelegatedExecutorService extends DelegatedExecutorService {
     FinalizableDelegatedExecutorService(ExecutorService executor) {
-      super(executor);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    protected void finalize( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
   }
   static class DelegatedScheduledExecutorService extends DelegatedExecutorService implements ScheduledExecutorService {
-    private final ScheduledExecutorService e;
     DelegatedScheduledExecutorService(ScheduledExecutorService executor) {
-      super(executor);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public ScheduledFuture<?> schedule(Runnable command,long delay, TimeUnit unit) {
                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
@@ -191,7 +178,5 @@ public class Executors {
     public ScheduledFuture<?> scheduleWithFixedDelay(Runnable command,long initialDelay,long delay, TimeUnit unit) {
                                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                    }
-  }
-  private Executors( ) {
   }
 }

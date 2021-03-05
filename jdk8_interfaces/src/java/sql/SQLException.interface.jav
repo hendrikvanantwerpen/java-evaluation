@@ -1,32 +1,31 @@
 package java.sql;
 
 import java.util.Iterator;
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 public class SQLException extends java. lang. Exception implements Iterable<Throwable> {
   public SQLException(String reason,String SQLState, int vendorCode) {
-    super(reason);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(String reason, String SQLState) {
-    super(reason);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(String reason) {
-    super(reason);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(String reason, Throwable cause) {
-    super(reason, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(String reason,String sqlState, Throwable cause) {
-    super(reason, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public SQLException(String reason,String sqlState,int vendorCode, Throwable cause) {
-    super(reason, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String getSQLState( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
@@ -43,9 +42,4 @@ public class SQLException extends java. lang. Exception implements Iterable<Thro
   public Iterator<Throwable> iterator( ) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private String SQLState;
-  private int vendorCode;
-  private volatile SQLException next;
-  private static final AtomicReferenceFieldUpdater<SQLException, SQLException> nextUpdater;
-  private static final long serialVersionUID;
 }

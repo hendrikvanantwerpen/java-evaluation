@@ -1,20 +1,13 @@
 package java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
 import java.io.Serializable;
-import java.text.MessageFormat;
 import java.util.spi.LocaleNameProvider;
 import sun.util.locale.BaseLocale;
-import sun.util.locale.InternalLocaleBuilder;
 import sun.util.locale.LocaleExtensions;
 import sun.util.locale.LocaleObjectCache;
 import sun.util.locale.provider.LocaleServiceProviderPool;
 
 public final class Locale implements Cloneable, Serializable {
-  static private final Cache LOCALECACHE;
   static public final Locale ENGLISH;
   static public final Locale FRENCH;
   static public final Locale GERMAN;
@@ -40,23 +33,15 @@ public final class Locale implements Cloneable, Serializable {
   static public final char PRIVATE_USE_EXTENSION;
   static public final char UNICODE_LOCALE_EXTENSION;
   static final long serialVersionUID;
-  private static final int DISPLAY_LANGUAGE;
-  private static final int DISPLAY_COUNTRY;
-  private static final int DISPLAY_VARIANT;
-  private static final int DISPLAY_SCRIPT;
-  private Locale(BaseLocale baseLocale, LocaleExtensions extensions) {
-  }
   public Locale(String language,String country, String variant) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Locale(String language, String country) {
-    this(language, country, "");
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Locale(String language) {
-    this(language, "", "");
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static Locale createConstant(String lang, String country) {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
   static Locale getInstance(String language,String country, String variant) {
                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                                             }
@@ -67,18 +52,8 @@ public final class Locale implements Cloneable, Serializable {
                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                              }
   private static class Cache extends LocaleObjectCache<LocaleKey, Locale> {
-    private Cache( ) {
-    }
-    protected Locale createObject(LocaleKey key) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
   }
   private static final class LocaleKey {
-    private final BaseLocale base;
-    private final LocaleExtensions exts;
-    private final int hash;
-    private LocaleKey(BaseLocale baseLocale, LocaleExtensions extensions) {
-    }
     public boolean equals(Object obj) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
@@ -92,12 +67,6 @@ public final class Locale implements Cloneable, Serializable {
   public static Locale getDefault(Locale. Category category) {
                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                              }
-  private static Locale initDefault( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private static Locale initDefault(Locale. Category category) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
   public static synchronized void setDefault(Locale newLocale) {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
@@ -113,9 +82,6 @@ public final class Locale implements Cloneable, Serializable {
   public static String [] getISOLanguages( ) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
-  private static String [] getISO2Table(String table) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
   public String getLanguage( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
@@ -170,9 +136,6 @@ public final class Locale implements Cloneable, Serializable {
   public String getISO3Country( ) throws MissingResourceException {
                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                   }
-  private static String getISO3Code(String iso2Code, String table) {
-                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                   }
   public final String getDisplayLanguage( ) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
@@ -191,9 +154,6 @@ public final class Locale implements Cloneable, Serializable {
   public String getDisplayCountry(Locale inLocale) {
                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                    }
-  private String getDisplayString(String code,Locale inLocale, int type) {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
   public final String getDisplayVariant( ) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
@@ -215,52 +175,14 @@ public final class Locale implements Cloneable, Serializable {
   public boolean equals(Object obj) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
-  private transient BaseLocale baseLocale;
-  private transient LocaleExtensions localeExtensions;
-  private transient volatile int hashCodeValue;
-  private volatile static Locale defaultLocale;
-  private volatile static Locale defaultDisplayLocale;
-  private volatile static Locale defaultFormatLocale;
-  private transient volatile String languageTag;
-  private String [] getDisplayVariantArray(Locale inLocale) {
-                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                            }
-  private static String formatList(String [] stringList,String listPattern, String listCompositionPattern) {
-                                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                           }
-  private static String [] composeList(MessageFormat format, String [] list) {
-                                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                             }
-  private static boolean isUnicodeExtensionKey(String s) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
-  private static final ObjectStreamField [] serialPersistentFields;
-  private void writeObject(ObjectOutputStream out) throws IOException {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private Object readResolve( ) throws java. io. ObjectStreamException {
-                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                       }
-  private static volatile String [] isoLanguages;
-  private static volatile String [] isoCountries;
-  private static String convertOldISOCodes(String language) {
-                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                            }
-  private static LocaleExtensions getCompatibilityExtensions(String language,String script,String country, String variant) {
-                                                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                           }
   private static class LocaleNameGetter implements LocaleServiceProviderPool. LocalizedObjectGetter<LocaleNameProvider, String> {
-    private static final LocaleNameGetter INSTANCE;
     public String getObject(LocaleNameProvider localeNameProvider,Locale locale,String key, Object ... params) {
                                                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                }
   }
   public enum Category {
-    DISPLAY (null), FORMAT (null)
     ;  Category(String languageKey,String scriptKey,String countryKey, String variantKey) {
+         throw new java . lang . RuntimeException ("Implementation stripped");
        }
        final String languageKey;
        final String scriptKey;
@@ -268,8 +190,8 @@ public final class Locale implements Cloneable, Serializable {
        final String variantKey;
   }
   public static final class Builder {
-    private final InternalLocaleBuilder localeBuilder;
     public Builder( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public Builder setLocale(Locale locale) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -312,23 +234,16 @@ public final class Locale implements Cloneable, Serializable {
                            }
   }
   public static enum FilteringMode {
-    AUTOSELECT_FILTERING, EXTENDED_FILTERING, IGNORE_EXTENDED_RANGES, MAP_EXTENDED_RANGES, REJECT_EXTENDED_RANGES
   }
-  ;
   public static final class LanguageRange {
     public static final double MAX_WEIGHT;
     public static final double MIN_WEIGHT;
-    private final String range;
-    private final double weight;
-    private volatile int hash;
     public LanguageRange(String range) {
-      this(range, MAX_WEIGHT);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public LanguageRange(String range, double weight) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    private static boolean isSubtagIllFormed(String subtag, boolean isFirstSubtag) {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
     public String getRange( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }

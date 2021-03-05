@@ -2,8 +2,8 @@ package java.io;
 
 
 public class FilterOutputStream extends OutputStream {
-  protected OutputStream out;
   public FilterOutputStream(OutputStream out) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void write(int b) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");

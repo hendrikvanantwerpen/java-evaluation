@@ -2,8 +2,6 @@ package java.util;
 
 
 public abstract class AbstractCollection<E> implements Collection<E> {
-  protected AbstractCollection( ) {
-  }
   public abstract Iterator<E> iterator( ) ;
   public abstract int size( ) ;
   public boolean isEmpty( ) {
@@ -18,13 +16,6 @@ public abstract class AbstractCollection<E> implements Collection<E> {
   public <T> T [] toArray(T [] a) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private static final int MAX_ARRAY_SIZE;
-  private static <T> T [] finishToArray(T [] r, Iterator<?> it) {
-                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                }
-  private static int hugeCapacity(int minCapacity) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
   public boolean add(E e) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }

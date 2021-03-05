@@ -2,9 +2,6 @@ package java.io;
 
 
 public class FilterInputStream extends InputStream {
-  protected volatile InputStream in;
-  protected FilterInputStream(InputStream in) {
-  }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }

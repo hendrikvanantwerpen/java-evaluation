@@ -3,36 +3,15 @@ package java.util;
 import java.lang.*;
 
 public class StringTokenizer implements Enumeration<Object> {
-  private int currentPosition;
-  private int newPosition;
-  private int maxPosition;
-  private String str;
-  private String delimiters;
-  private boolean retDelims;
-  private boolean delimsChanged;
-  private int maxDelimCodePoint;
-  private boolean hasSurrogates;
-  private int [] delimiterCodePoints;
-  private void setMaxDelimCodePoint( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
   public StringTokenizer(String str,String delim, boolean returnDelims) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringTokenizer(String str, String delim) {
-    this(str, delim, false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringTokenizer(String str) {
-    this(str, " \t\n\r\f", false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private int skipDelimiters(int startPos) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private int scanToken(int startPos) {
-                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                      }
-  private boolean isDelimiter(int codePoint) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   public boolean hasMoreTokens( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }

@@ -4,36 +4,24 @@ import java.io.IOException;
 import java.nio.channels.ServerSocketChannel;
 
 public class ServerSocket implements java. io. Closeable {
-  private boolean created;
-  private boolean bound;
-  private boolean closed;
-  private Object closeLock;
-  private SocketImpl impl;
-  private boolean oldImpl;
   ServerSocket(SocketImpl impl) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private static Void checkPermission( ) {
-                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                         }
   public ServerSocket( ) throws IOException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ServerSocket(int port) throws IOException{
-    this(port, 50, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ServerSocket(int port, int backlog) throws IOException{
-    this(port, backlog, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ServerSocket(int port,int backlog, InetAddress bindAddr) throws IOException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   SocketImpl getImpl( ) throws SocketException {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
-  private void checkOldImpl( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
-  private void setImpl( ) {
-                            throw new java . lang . RuntimeException ("Implementation stripped");
-                          }
   void createImpl( ) throws SocketException {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
@@ -55,9 +43,6 @@ public class ServerSocket implements java. io. Closeable {
   public Socket accept( ) throws IOException {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
-  protected final void implAccept(Socket s) throws IOException {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
   public void close( ) throws IOException {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
@@ -91,7 +76,6 @@ public class ServerSocket implements java. io. Closeable {
   void setCreated( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
                      }
-  private static SocketImplFactory factory;
   public static synchronized void setSocketFactory(SocketImplFactory fac) throws IOException {
                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                              }

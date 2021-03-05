@@ -3,15 +3,16 @@ package java.lang;
 
 public class UnsupportedOperationException extends RuntimeException {
   public UnsupportedOperationException( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public UnsupportedOperationException(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public UnsupportedOperationException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public UnsupportedOperationException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   static final long serialVersionUID;
 }

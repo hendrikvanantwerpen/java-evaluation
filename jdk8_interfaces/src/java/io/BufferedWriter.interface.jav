@@ -2,29 +2,18 @@ package java.io;
 
 
 public class BufferedWriter extends Writer {
-  private Writer out;
-  private char cb[];
-  private int nChars, nextChar;
-  private static int defaultCharBufferSize;
-  private String lineSeparator;
   public BufferedWriter(Writer out) {
-    this(out, defaultCharBufferSize);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public BufferedWriter(Writer out, int sz) {
-    super(out);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureOpen( ) throws IOException {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   void flushBuffer( ) throws IOException {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
   public void write(int c) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
-  private int min(int a, int b) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
   public void write(char cbuf[],int off, int len) throws IOException {
                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                      }

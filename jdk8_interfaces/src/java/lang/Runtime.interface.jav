@@ -3,12 +3,9 @@ package java.lang;
 import java.io.*;
 
 public class Runtime {
-  private static Runtime currentRuntime;
   public static Runtime getRuntime( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
-  private Runtime( ) {
-  }
   public void exit(int status) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
@@ -47,7 +44,6 @@ public class Runtime {
   public native long totalMemory( ) ;
   public native long maxMemory( ) ;
   public native void gc( ) ;
-  private static native void runFinalization0( ) ;
   public void runFinalization( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }

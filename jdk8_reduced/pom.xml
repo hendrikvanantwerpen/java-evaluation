@@ -30,18 +30,6 @@
         <groupId>org.metaborg</groupId>
         <artifactId>spoofax-maven-plugin</artifactId>
         <extensions>true</extensions>
-        <configuration>
-          <language>metaborg-java</language>
-          <goal>Strip to public interface</goal>
-          <fileSets>
-            <fileSet>
-              <directory>${basedir}/src</directory>
-              <includes>
-                <include>**/*.jav</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </configuration>
       </plugin>
     </plugins>
   </build>

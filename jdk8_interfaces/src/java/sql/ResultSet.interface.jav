@@ -64,27 +64,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
   boolean absolute(int row) throws SQLException ;
   boolean relative(int rows) throws SQLException ;
   boolean previous( ) throws SQLException ;
-  int FETCH_FORWARD
-  ;
-  int FETCH_REVERSE
-  ;
-  int FETCH_UNKNOWN
-  ;
   void setFetchDirection(int direction) throws SQLException ;
   int getFetchDirection( ) throws SQLException ;
   void setFetchSize(int rows) throws SQLException ;
   int getFetchSize( ) throws SQLException ;
-  int TYPE_FORWARD_ONLY
-  ;
-  int TYPE_SCROLL_INSENSITIVE
-  ;
-  int TYPE_SCROLL_SENSITIVE
-  ;
   int getType( ) throws SQLException ;
-  int CONCUR_READ_ONLY
-  ;
-  int CONCUR_UPDATABLE
-  ;
   int getConcurrency( ) throws SQLException ;
   boolean rowUpdated( ) throws SQLException ;
   boolean rowInserted( ) throws SQLException ;
@@ -151,10 +135,6 @@ public interface ResultSet extends Wrapper, AutoCloseable {
   java. sql. Time getTime(String columnLabel, Calendar cal) throws SQLException ;
   java. sql. Timestamp getTimestamp(int columnIndex, Calendar cal) throws SQLException ;
   java. sql. Timestamp getTimestamp(String columnLabel, Calendar cal) throws SQLException ;
-  int HOLD_CURSORS_OVER_COMMIT
-  ;
-  int CLOSE_CURSORS_AT_COMMIT
-  ;
   java. net. URL getURL(int columnIndex) throws SQLException ;
   java. net. URL getURL(String columnLabel) throws SQLException ;
   void updateRef(int columnIndex, java. sql. Ref x) throws SQLException ;

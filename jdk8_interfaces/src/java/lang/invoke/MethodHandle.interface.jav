@@ -1,14 +1,11 @@
 package java.lang.invoke;
 
 import java.util.*;
+import static java.lang.invoke.MethodHandleStatics.*;
 
 public abstract class MethodHandle {
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
   @interface PolymorphicSignature {
   }
-  private final MethodType type;
   final LambdaForm form;
   MethodHandle asTypeCache;
   byte customizationCount;
@@ -16,6 +13,7 @@ public abstract class MethodHandle {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
   MethodHandle(MethodType type, LambdaForm form) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public final native Object invokeExact(Object ... args) throws Throwable ;
   public final native Object invoke(Object ... args) throws Throwable ;
@@ -33,19 +31,10 @@ public abstract class MethodHandle {
   public MethodHandle asType(MethodType newType) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  private MethodHandle asTypeCached(MethodType newType) {
-                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                        }
   MethodHandle asTypeUncached(MethodType newType) {
                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                   }
   public MethodHandle asSpreader(Class<?> arrayType, int arrayLength) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private MethodType asSpreaderChecks(Class<?> arrayType, int arrayLength) {
-                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                           }
-  private void spreadArrayChecks(Class<?> arrayType, int arrayLength) {
                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                                       }
   public MethodHandle asCollector(Class<?> arrayType, int arrayLength) {
@@ -119,8 +108,4 @@ public abstract class MethodHandle {
   void customize( ) {
                       throw new java . lang . RuntimeException ("Implementation stripped");
                     }
-  private static final long FORM_OFFSET;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
 }

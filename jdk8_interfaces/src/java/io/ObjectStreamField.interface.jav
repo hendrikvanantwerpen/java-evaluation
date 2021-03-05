@@ -3,20 +3,17 @@ package java.io;
 import java.lang.reflect.Field;
 
 public class ObjectStreamField implements Comparable<Object> {
-  private final String name;
-  private final String signature;
-  private final Class<?> type;
-  private final boolean unshared;
-  private final Field field;
-  private int offset;
   public ObjectStreamField(String name, Class<?> type) {
-    this(name, type, false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ObjectStreamField(String name,Class<?> type, boolean unshared) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   ObjectStreamField(String name,String signature, boolean unshared) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   ObjectStreamField(Field field,boolean unshared, boolean showType) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String getName( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -33,9 +30,6 @@ public class ObjectStreamField implements Comparable<Object> {
   public int getOffset( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
-  protected void setOffset(int offset) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
   public boolean isPrimitive( ) {
                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                 }
@@ -54,7 +48,4 @@ public class ObjectStreamField implements Comparable<Object> {
   String getSignature( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private static String getClassSignature(Class<?> cl) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
 }

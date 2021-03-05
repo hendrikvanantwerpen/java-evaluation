@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class ArrayStoreException extends RuntimeException {
-  private static final long serialVersionUID;
   public ArrayStoreException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ArrayStoreException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

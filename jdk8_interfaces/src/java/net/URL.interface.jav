@@ -1,51 +1,31 @@
 package java.net;
 
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InvalidObjectException;
-import java.io.ObjectStreamException;
-import java.io.ObjectStreamField;
 import java.util.Hashtable;
 
 public final class URL implements java. io. Serializable {
   static final String BUILTIN_HANDLERS_PREFIX;
   static final long serialVersionUID;
-  private static final String protocolPathProp;
-  private String protocol;
-  private String host;
-  private int port;
-  private String file;
-  private transient String query;
-  private String authority;
-  private transient String path;
-  private transient String userInfo;
-  private String ref;
   transient InetAddress hostAddress;
   transient URLStreamHandler handler;
-  private int hashCode;
-  private transient UrlDeserializedState tempState;
   public URL(String protocol,String host,int port, String file) throws MalformedURLException{
-    this(protocol, host, port, file, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public URL(String protocol,String host, String file) throws MalformedURLException{
-    this(protocol, host, -1, file);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public URL(String protocol,String host,int port,String file, URLStreamHandler handler) throws MalformedURLException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public URL(String spec) throws MalformedURLException{
-    this(null, spec);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public URL(URL context, String spec) throws MalformedURLException{
-    this(context, spec, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public URL(URL context,String spec, URLStreamHandler handler) throws MalformedURLException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private boolean isValidProtocol(String protocol) {
-                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                   }
-  private void checkSpecifyHandler(SecurityManager sm) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
   void set(String protocol,String host,int port,String file, String ref) {
                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                          }
@@ -120,42 +100,17 @@ public final class URL implements java. io. Serializable {
                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                              }
   static Hashtable<String, URLStreamHandler> handlers;
-  private static Object streamHandlerLock;
   static URLStreamHandler getURLStreamHandler(String protocol) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
-  private static final ObjectStreamField [] serialPersistentFields;
-  private synchronized void writeObject(java. io. ObjectOutputStream s) throws IOException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
-  private synchronized void readObject(java. io. ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                 }
-  private Object readResolve( ) throws ObjectStreamException {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private URL setDeserializedFields(URLStreamHandler handler) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
-  private URL fabricateNewURL( ) throws InvalidObjectException {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
   boolean isBuiltinStreamHandler(URLStreamHandler handler) {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
-  private boolean isBuiltinStreamHandler(String handlerClassName) {
-                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                  }
-  private void resetState( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
-  private void setSerializedHashCode(int hc) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
 }
 class Parts {
   String path, query, ref;
   Parts(String file) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   String getPath( ) {
                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -168,14 +123,8 @@ class Parts {
                    }
 }
 final class UrlDeserializedState {
-  private final String protocol;
-  private final String host;
-  private final int port;
-  private final String authority;
-  private final String file;
-  private final String ref;
-  private final int hashCode;
   public UrlDeserializedState(String protocol,String host,int port,String authority,String file,String ref, int hashCode) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   String getProtocol( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");

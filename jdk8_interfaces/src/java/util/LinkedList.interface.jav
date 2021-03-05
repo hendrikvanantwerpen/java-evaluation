@@ -7,25 +7,17 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
   transient Node<E> first;
   transient Node<E> last;
   public LinkedList( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedList(Collection<? extends E> c) {
-    this( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void linkFirst(E e) {
-                                throw new java . lang . RuntimeException ("Implementation stripped");
-                              }
   void linkLast(E e) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
                      }
   void linkBefore(E e, Node<E> succ) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
-  private E unlinkFirst(Node<E> f) {
-                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                   }
-  private E unlinkLast(Node<E> l) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
   E unlink(Node<E> x) {
                         throw new java . lang . RuntimeException ("Implementation stripped");
                       }
@@ -80,21 +72,6 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
   public E remove(int index) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-  private boolean isElementIndex(int index) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
-  private boolean isPositionIndex(int index) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
-  private String outOfBoundsMsg(int index) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private void checkElementIndex(int index) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
-  private void checkPositionIndex(int index) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   Node<E> node(int index) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -153,11 +130,8 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
   private class ListItr implements ListIterator<E> {
-    private Node<E> lastReturned;
-    private Node<E> next;
-    private int nextIndex;
-    private int expectedModCount;
     ListItr(int index) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public boolean hasNext( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -198,13 +172,13 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
     Node<E> next;
     Node<E> prev;
     Node(Node<E> prev,E element, Node<E> next) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
   }
   public Iterator<E> descendingIterator( ) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
   private class DescendingIterator implements Iterator<E> {
-    private final ListItr itr;
     public boolean hasNext( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
@@ -215,9 +189,6 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
   }
-  private LinkedList<E> superClone( ) {
-                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                      }
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
@@ -227,13 +198,6 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
   public <T> T [] toArray(T [] a) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private static final long serialVersionUID;
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
   public Spliterator<E> spliterator( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
@@ -246,6 +210,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
     int expectedModCount;
     int batch;
     LLSpliterator(LinkedList<E> list,int est, int expectedModCount) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     final int getEst( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");

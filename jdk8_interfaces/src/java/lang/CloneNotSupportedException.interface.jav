@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class CloneNotSupportedException extends Exception {
-  private static final long serialVersionUID;
   public CloneNotSupportedException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public CloneNotSupportedException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

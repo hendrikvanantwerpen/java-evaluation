@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class IndexOutOfBoundsException extends RuntimeException {
-  private static final long serialVersionUID;
   public IndexOutOfBoundsException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IndexOutOfBoundsException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

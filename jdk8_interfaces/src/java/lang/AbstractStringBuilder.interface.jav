@@ -5,8 +5,10 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
   char [] value;
   int count;
   AbstractStringBuilder( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   AbstractStringBuilder(int capacity) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public int length( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -17,16 +19,6 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
   public void ensureCapacity(int minimumCapacity) {
                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                   }
-  private void ensureCapacityInternal(int minimumCapacity) {
-                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                           }
-  private static final int MAX_ARRAY_SIZE;
-  private int newCapacity(int minCapacity) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private int hugeCapacity(int minCapacity) {
-                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                            }
   public void trimToSize( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
@@ -69,9 +61,6 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
   public AbstractStringBuilder append(CharSequence s) {
                                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                                       }
-  private AbstractStringBuilder appendNull( ) {
-                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                              }
   public AbstractStringBuilder append(CharSequence s,int start, int end) {
                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                                          }
@@ -171,9 +160,6 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
   public AbstractStringBuilder reverse( ) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
-  private void reverseAllValidSurrogatePairs( ) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public abstract String toString( ) ;
   final char [] getValue( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");

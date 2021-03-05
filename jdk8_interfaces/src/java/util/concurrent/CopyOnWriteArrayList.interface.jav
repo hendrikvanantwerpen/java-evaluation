@@ -14,9 +14,7 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable, java. io. Serializable {
-  private static final long serialVersionUID;
   final transient ReentrantLock lock;
-  private transient volatile Object [] array;
   final Object [] getArray( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
@@ -24,10 +22,13 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                    }
   public CopyOnWriteArrayList( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public CopyOnWriteArrayList(Collection<? extends E> c) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public CopyOnWriteArrayList(E [] toCopyIn) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public int size( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -35,15 +36,6 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
   public boolean isEmpty( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static boolean eq(Object o1, Object o2) {
-                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                  }
-  private static int indexOf(Object o,Object [] elements,int index, int fence) {
-                                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                               }
-  private static int lastIndexOf(Object o,Object [] elements, int index) {
-                                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                         }
   public boolean contains(Object o) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                     }
@@ -68,9 +60,6 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
   public <T> T [] toArray(T a[]) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
-  private E get(Object [] a, int index) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
   public E get(int index) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -89,18 +78,12 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
   public boolean remove(Object o) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private boolean remove(Object o,Object [] snapshot, int index) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
   void removeRange(int fromIndex, int toIndex) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
   public boolean addIfAbsent(E e) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private boolean addIfAbsent(E e, Object [] snapshot) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
   public boolean containsAll(Collection<?> c) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }
@@ -134,12 +117,6 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
   public void sort(Comparator<? super E> c) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
@@ -162,10 +139,6 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
   static final class COWIterator<E> implements ListIterator<E> {
-    private final Object [] snapshot;
-    private int cursor;
-    private COWIterator(Object [] elements, int initialCursor) {
-    }
     public boolean hasNext( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
@@ -201,18 +174,9 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                      }
   private static class COWSubList<E> extends AbstractList<E> implements RandomAccess {
-    private final CopyOnWriteArrayList<E> l;
-    private final int offset;
-    private int size;
-    private Object [] expectedArray;
     COWSubList(CopyOnWriteArrayList<E> list,int fromIndex, int toIndex) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
-    private void checkForComodification( ) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-    private void rangeCheck(int index) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
     public E set(int index, E element) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
@@ -266,10 +230,8 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
                                          }
   }
   private static class COWSubListIterator<E> implements ListIterator<E> {
-    private final ListIterator<E> it;
-    private final int offset;
-    private final int size;
     COWSubListIterator(List<E> l,int index,int offset, int size) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public boolean hasNext( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -302,12 +264,4 @@ public class CopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable
                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                              }
   }
-  private void resetLock( ) {
-                              throw new java . lang . RuntimeException ("Implementation stripped");
-                            }
-  private static final sun. misc. Unsafe UNSAFE;
-  private static final long lockOffset;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
 }

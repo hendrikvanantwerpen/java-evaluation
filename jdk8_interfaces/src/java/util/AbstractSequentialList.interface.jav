@@ -2,8 +2,6 @@ package java.util;
 
 
 public abstract class AbstractSequentialList<E> extends AbstractList<E> {
-  protected AbstractSequentialList( ) {
-  }
   public E get(int index) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }

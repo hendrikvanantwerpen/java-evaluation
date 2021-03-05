@@ -3,17 +3,20 @@ package java.util;
 
 public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, java. io. Serializable {
   static final long serialVersionUID;
-  private transient HashMap<E, Object> map;
-  private static final Object PRESENT;
   public HashSet( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashSet(Collection<? extends E> c) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashSet(int initialCapacity, float loadFactor) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashSet(int initialCapacity) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   HashSet(int initialCapacity,float loadFactor, boolean dummy) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Iterator<E> iterator( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
@@ -39,12 +42,6 @@ public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, jav
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
   public Spliterator<E> spliterator( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }

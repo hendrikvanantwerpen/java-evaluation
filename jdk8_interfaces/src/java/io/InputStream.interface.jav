@@ -2,7 +2,6 @@ package java.io;
 
 
 public abstract class InputStream implements Closeable {
-  private static final int MAX_SKIP_BUFFER_SIZE;
   public abstract int read( ) throws IOException ;
   public int read(byte b[]) throws IOException {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");

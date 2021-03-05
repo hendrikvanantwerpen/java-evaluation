@@ -1,33 +1,25 @@
 package java.util;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
 import java.time.Instant;
-import sun.util.calendar.BaseCalendar;
 
 public class Date implements java. io. Serializable, Cloneable, Comparable<Date> {
-  private static final BaseCalendar gcal;
-  private static BaseCalendar jcal;
-  private transient long fastTime;
-  private transient BaseCalendar. Date cdate;
-  private static int defaultCenturyStart;
-  private static final long serialVersionUID;
   public Date( ) {
-    this(System. currentTimeMillis( ));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Date(long date) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Date(int year,int month, int date) {
-    this(year, month, date, 0, 0, 0);
+  public Date(int year,int month, int date) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Date(int year,int month,int date,int hrs, int min) {
-    this(year, month, date, hrs, min, 0);
+  public Date(int year,int month,int date,int hrs, int min) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Date(int year,int month,int date,int hrs,int min, int sec) {
+  public Date(int year,int month,int date,int hrs,int min, int sec) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Date(String s) {
-    this(parse(s));
+  public Date(String s) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
@@ -38,8 +30,6 @@ public class Date implements java. io. Serializable, Cloneable, Comparable<Date>
   public static long parse(String s) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
-  private final static String wtb[];
-  private final static int ttb[];
   public int getYear( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
                         }
@@ -82,9 +72,6 @@ public class Date implements java. io. Serializable, Cloneable, Comparable<Date>
   public long getTime( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private final long getTimeImpl( ) {
-                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                    }
   public void setTime(long time) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
@@ -109,9 +96,6 @@ public class Date implements java. io. Serializable, Cloneable, Comparable<Date>
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static final StringBuilder convertToAbbr(StringBuilder sb, String name) {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
   public String toLocaleString( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
@@ -121,33 +105,6 @@ public class Date implements java. io. Serializable, Cloneable, Comparable<Date>
   public int getTimezoneOffset( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private final BaseCalendar. Date getCalendarDate( ) {
-                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                      }
-  private final BaseCalendar. Date normalize( ) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
-  private final BaseCalendar. Date normalize(BaseCalendar. Date date) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private static final BaseCalendar getCalendarSystem(int year) {
-                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                }
-  private static final BaseCalendar getCalendarSystem(long utc) {
-                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                }
-  private static final BaseCalendar getCalendarSystem(BaseCalendar. Date cdate) {
-                                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                }
-  synchronized private static final BaseCalendar getJulianCalendar( ) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private void writeObject(ObjectOutputStream s) throws IOException {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
-  private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                          }
   public static Date from(Instant instant) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }

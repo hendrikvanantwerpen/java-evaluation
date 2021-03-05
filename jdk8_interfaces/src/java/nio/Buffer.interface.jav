@@ -3,12 +3,9 @@ package java.nio;
 
 public abstract class Buffer {
   static final int SPLITERATOR_CHARACTERISTICS;
-  private int mark;
-  private int position;
-  private int limit;
-  private int capacity;
   long address;
   Buffer(int mark,int pos,int lim, int cap) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public final int capacity( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");

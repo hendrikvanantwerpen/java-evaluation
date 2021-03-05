@@ -1,82 +1,19 @@
 package java.util.concurrent;
 
-import java.security.AccessControlContext;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.*;
 
 public class ThreadPoolExecutor extends AbstractExecutorService {
-  private final AtomicInteger ctl;
-  private static final int COUNT_BITS;
-  private static final int CAPACITY;
-  private static final int RUNNING;
-  private static final int SHUTDOWN;
-  private static final int STOP;
-  private static final int TIDYING;
-  private static final int TERMINATED;
-  private static int runStateOf(int c) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private static int workerCountOf(int c) {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
-  private static int ctlOf(int rs, int wc) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private static boolean runStateLessThan(int c, int s) {
-                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                        }
-  private static boolean runStateAtLeast(int c, int s) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
-  private static boolean isRunning(int c) {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
-  private boolean compareAndIncrementWorkerCount(int expect) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private boolean compareAndDecrementWorkerCount(int expect) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
-  private void decrementWorkerCount( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private final BlockingQueue<Runnable> workQueue;
-  private final ReentrantLock mainLock;
-  private final HashSet<Worker> workers;
-  private final Condition termination;
-  private int largestPoolSize;
-  private long completedTaskCount;
-  private volatile ThreadFactory threadFactory;
-  private volatile RejectedExecutionHandler handler;
-  private volatile long keepAliveTime;
-  private volatile boolean allowCoreThreadTimeOut;
-  private volatile int corePoolSize;
-  private volatile int maximumPoolSize;
-  private static final RejectedExecutionHandler defaultHandler;
-  private static final RuntimePermission shutdownPerm;
-  private final AccessControlContext acc;
   private final class Worker extends AbstractQueuedSynchronizer implements Runnable {
-    private static final long serialVersionUID;
     final Thread thread;
     Runnable firstTask;
     volatile long completedTasks;
     Worker(Runnable firstTask) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void run( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
-    protected boolean isHeldExclusively( ) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-    protected boolean tryAcquire(int unused) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
-    protected boolean tryRelease(int unused) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
     public void lock( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
                         }
@@ -93,25 +30,9 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
   }
-  private void advanceRunState(int targetState) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   final void tryTerminate( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-  private void checkShutdownAccess( ) {
-                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                      }
-  private void interruptWorkers( ) {
-                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                   }
-  private void interruptIdleWorkers(boolean onlyOne) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
-  private void interruptIdleWorkers( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private static final boolean ONLY_ONE;
   final void reject(Runnable command) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
@@ -121,34 +42,20 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   final boolean isRunningOrShutdown(boolean shutdownOK) {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                                         }
-  private List<Runnable> drainQueue( ) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private boolean addWorker(Runnable firstTask, boolean core) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
-  private void addWorkerFailed(Worker w) {
-                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                         }
-  private void processWorkerExit(Worker w, boolean completedAbruptly) {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
-  private Runnable getTask( ) {
-                                throw new java . lang . RuntimeException ("Implementation stripped");
-                              }
   final void runWorker(Worker w) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
   public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit, BlockingQueue<Runnable> workQueue) {
-    this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, Executors. defaultThreadFactory( ), defaultHandler);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,BlockingQueue<Runnable> workQueue, ThreadFactory threadFactory) {
-    this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, threadFactory, defaultHandler);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,BlockingQueue<Runnable> workQueue, RejectedExecutionHandler handler) {
-    this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, Executors. defaultThreadFactory( ), handler);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ThreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory, RejectedExecutionHandler handler) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void execute(Runnable command) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -171,9 +78,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   public boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException {
                                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                            }
-  protected void finalize( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
   public void setThreadFactory(ThreadFactory threadFactory) {
                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                             }
@@ -246,17 +150,9 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  protected void beforeExecute(Thread t, Runnable r) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
-  protected void afterExecute(Runnable r, Throwable t) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
-  protected void terminated( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
   public static class CallerRunsPolicy implements RejectedExecutionHandler {
     public CallerRunsPolicy( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -264,6 +160,7 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   }
   public static class AbortPolicy implements RejectedExecutionHandler {
     public AbortPolicy( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -271,6 +168,7 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   }
   public static class DiscardPolicy implements RejectedExecutionHandler {
     public DiscardPolicy( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -278,6 +176,7 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
   }
   public static class DiscardOldestPolicy implements RejectedExecutionHandler {
     public DiscardOldestPolicy( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");

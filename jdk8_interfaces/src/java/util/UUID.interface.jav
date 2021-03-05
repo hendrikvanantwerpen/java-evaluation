@@ -3,15 +3,11 @@ package java.util;
 import java.security.*;
 
 public final class UUID implements java. io. Serializable, Comparable<UUID> {
-  private static final long serialVersionUID;
-  private final long mostSigBits;
-  private final long leastSigBits;
   private static class Holder {
     static final SecureRandom numberGenerator;
   }
-  private UUID(byte [] data) {
-  }
   public UUID(long mostSigBits, long leastSigBits) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static UUID randomUUID( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
@@ -46,9 +42,6 @@ public final class UUID implements java. io. Serializable, Comparable<UUID> {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private static String digits(long val, int digits) {
-                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                     }
   public int hashCode( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }

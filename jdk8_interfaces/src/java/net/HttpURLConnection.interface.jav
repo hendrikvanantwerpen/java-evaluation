@@ -5,10 +5,6 @@ import java.io.IOException;
 import java.security.Permission;
 
 abstract public class HttpURLConnection extends URLConnection {
-  protected String method;
-  protected int chunkLength;
-  protected int fixedContentLength;
-  protected long fixedContentLengthLong;
   public String getHeaderFieldKey(int n) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
@@ -18,21 +14,12 @@ abstract public class HttpURLConnection extends URLConnection {
   public void setFixedLengthStreamingMode(long contentLength) {
                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                                               }
-  private static final int DEFAULT_CHUNK_SIZE;
   public void setChunkedStreamingMode(int chunklen) {
                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                     }
   public String getHeaderField(int n) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
-  protected int responseCode;
-  protected String responseMessage;
-  private static boolean followRedirects;
-  protected boolean instanceFollowRedirects;
-  private static final String [] methods;
-  protected HttpURLConnection(URL u) {
-    super(u);
-  }
   public static void setFollowRedirects(boolean set) {
                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                      }

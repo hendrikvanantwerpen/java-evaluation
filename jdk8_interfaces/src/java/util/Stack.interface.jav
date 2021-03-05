@@ -3,6 +3,7 @@ package java.util;
 
 public class Stack<E> extends Vector<E> {
   public Stack( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public E push(E item) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -19,5 +20,4 @@ public class Stack<E> extends Vector<E> {
   public synchronized int search(Object o) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
-  private static final long serialVersionUID;
 }

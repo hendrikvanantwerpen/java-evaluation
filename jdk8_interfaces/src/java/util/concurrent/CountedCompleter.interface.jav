@@ -2,15 +2,8 @@ package java.util.concurrent;
 
 
 public abstract class CountedCompleter<T> extends ForkJoinTask<T> {
-  private static final long serialVersionUID;
   final CountedCompleter<?> completer;
   volatile int pending;
-  protected CountedCompleter(CountedCompleter<?> completer, int initialPendingCount) {
-  }
-  protected CountedCompleter(CountedCompleter<?> completer) {
-  }
-  protected CountedCompleter( ) {
-  }
   public abstract void compute( ) ;
   public void onCompletion(CountedCompleter<?> caller) {
                                                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -63,18 +56,7 @@ public abstract class CountedCompleter<T> extends ForkJoinTask<T> {
   void internalPropagateException(Throwable ex) {
                                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                                 }
-  protected final boolean exec( ) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
   public T getRawResult( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
                            }
-  protected void setRawResult(T t) {
-                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                   }
-  private static final sun. misc. Unsafe U;
-  private static final long PENDING;
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
 }

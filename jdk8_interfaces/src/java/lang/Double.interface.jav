@@ -37,10 +37,11 @@ public final class Double extends Number implements Comparable<Double> {
   public static boolean isFinite(double d) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
-  private final double value;
   public Double(double value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Double(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public boolean isNaN( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -98,5 +99,4 @@ public final class Double extends Number implements Comparable<Double> {
   public static double min(double a, double b) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                }
-  private static final long serialVersionUID;
 }

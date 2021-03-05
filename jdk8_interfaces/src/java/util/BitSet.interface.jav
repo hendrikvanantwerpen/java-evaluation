@@ -6,32 +6,11 @@ import java.nio.LongBuffer;
 import java.util.stream.IntStream;
 
 public class BitSet implements Cloneable, java. io. Serializable {
-  private final static int ADDRESS_BITS_PER_WORD;
-  private final static int BITS_PER_WORD;
-  private final static int BIT_INDEX_MASK;
-  private static final long WORD_MASK;
-  private static final ObjectStreamField [] serialPersistentFields;
-  private long [] words;
-  private transient int wordsInUse;
-  private transient boolean sizeIsSticky;
-  private static final long serialVersionUID;
-  private static int wordIndex(int bitIndex) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
-  private void checkInvariants( ) {
-                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                  }
-  private void recalculateWordsInUse( ) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
   public BitSet( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public BitSet(int nbits) {
-  }
-  private void initWords(int nbits) {
-                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                    }
-  private BitSet(long [] words) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static BitSet valueOf(long [] longs) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -51,15 +30,6 @@ public class BitSet implements Cloneable, java. io. Serializable {
   public long [] toLongArray( ) {
                                   throw new java . lang . RuntimeException ("Implementation stripped");
                                 }
-  private void ensureCapacity(int wordsRequired) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
-  private void expandTo(int wordIndex) {
-                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                       }
-  private static void checkRange(int fromIndex, int toIndex) {
-                                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                                             }
   public void flip(int bitIndex) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
@@ -141,15 +111,6 @@ public class BitSet implements Cloneable, java. io. Serializable {
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private void trimToSize( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
-  private void writeObject(ObjectOutputStream s) throws IOException {
-                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                    }
-  private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                          }
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }

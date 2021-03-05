@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class IncompatibleClassChangeError extends LinkageError {
-  private static final long serialVersionUID;
   public IncompatibleClassChangeError( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IncompatibleClassChangeError(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

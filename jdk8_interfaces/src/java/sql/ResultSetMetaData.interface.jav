@@ -8,12 +8,6 @@ public interface ResultSetMetaData extends Wrapper {
   boolean isSearchable(int column) throws SQLException ;
   boolean isCurrency(int column) throws SQLException ;
   int isNullable(int column) throws SQLException ;
-  int columnNoNulls
-  ;
-  int columnNullable
-  ;
-  int columnNullableUnknown
-  ;
   boolean isSigned(int column) throws SQLException ;
   int getColumnDisplaySize(int column) throws SQLException ;
   String getColumnLabel(int column) throws SQLException ;

@@ -2,15 +2,9 @@ package java.io;
 
 
 public class StringReader extends Reader {
-  private String str;
-  private int length;
-  private int next;
-  private int mark;
   public StringReader(String s) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureOpen( ) throws IOException {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }

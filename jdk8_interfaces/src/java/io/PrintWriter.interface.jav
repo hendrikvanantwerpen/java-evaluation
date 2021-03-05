@@ -1,49 +1,32 @@
 package java.io;
 
-import java.util.Formatter;
 import java.util.Locale;
-import java.nio.charset.Charset;
 
 public class PrintWriter extends Writer {
-  protected Writer out;
-  private final boolean autoFlush;
-  private boolean trouble;
-  private Formatter formatter;
-  private PrintStream psOut;
-  private final String lineSeparator;
-  private static Charset toCharset(String csn) throws UnsupportedEncodingException {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
   public PrintWriter(Writer out) {
-    this(out, false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(Writer out, boolean autoFlush) {
-    super(out);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(OutputStream out) {
-    this(out, false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(OutputStream out, boolean autoFlush) {
-    this(new BufferedWriter (new OutputStreamWriter (out)), autoFlush);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(String fileName) throws FileNotFoundException{
-    this(new BufferedWriter (new OutputStreamWriter (new FileOutputStream (fileName))), false);
-  }
-  private PrintWriter(Charset charset, File file) throws FileNotFoundException{
-    this(new BufferedWriter (new OutputStreamWriter (new FileOutputStream (file),charset)), false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(String fileName, String csn) throws FileNotFoundException, UnsupportedEncodingException{
-    this(toCharset(csn), new File (fileName));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(File file) throws FileNotFoundException{
-    this(new BufferedWriter (new OutputStreamWriter (new FileOutputStream (file))), false);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public PrintWriter(File file, String csn) throws FileNotFoundException, UnsupportedEncodingException{
-    this(toCharset(csn), file);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureOpen( ) throws IOException {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public void flush( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
@@ -51,12 +34,6 @@ public class PrintWriter extends Writer {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
   public boolean checkError( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
-  protected void setError( ) {
-                               throw new java . lang . RuntimeException ("Implementation stripped");
-                             }
-  protected void clearError( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
   public void write(int c) {
@@ -74,9 +51,6 @@ public class PrintWriter extends Writer {
   public void write(String s) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
-  private void newLine( ) {
-                            throw new java . lang . RuntimeException ("Implementation stripped");
-                          }
   public void print(boolean b) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }

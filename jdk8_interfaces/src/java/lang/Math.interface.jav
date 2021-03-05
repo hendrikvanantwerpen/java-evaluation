@@ -3,8 +3,6 @@ package java.lang;
 import java.util.Random;
 
 public final class Math {
-  private Math( ) {
-  }
   public static final double E;
   public static final double PI;
   public static double sin(double a) {
@@ -145,8 +143,6 @@ public final class Math {
   public static long max(long a, long b) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private static long negativeZeroFloatBits;
-  private static long negativeZeroDoubleBits;
   public static float max(float a, float b) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }

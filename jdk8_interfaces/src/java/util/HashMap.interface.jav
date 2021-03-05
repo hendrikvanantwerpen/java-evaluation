@@ -8,7 +8,6 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Cloneable, Serializable {
-  private static final long serialVersionUID;
   static final int DEFAULT_INITIAL_CAPACITY;
   static final int MAXIMUM_CAPACITY;
   static final float DEFAULT_LOAD_FACTOR;
@@ -21,6 +20,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
     V value;
     Node<K, V> next;
     Node(int hash,K key,V value, Node<K, V> next) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public final K getKey( ) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
@@ -60,13 +60,16 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
   int threshold;
   final float loadFactor;
   public HashMap(int initialCapacity, float loadFactor) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashMap(int initialCapacity) {
-    this(initialCapacity, DEFAULT_LOAD_FACTOR);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashMap( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public HashMap(Map<? extends K, ? extends V> m) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   final void putMapEntries(Map<? extends K, ? extends V> m, boolean evict) {
                                                                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -230,18 +233,13 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
   final int capacity( ) {
                           throw new java . lang . RuntimeException ("Implementation stripped");
                         }
-  private void writeObject(java. io. ObjectOutputStream s) throws IOException {
-                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                              }
-  private void readObject(java. io. ObjectInputStream s) throws IOException, ClassNotFoundException {
-                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                    }
   abstract class HashIterator {
     Node<K, V> next;
     Node<K, V> current;
     int expectedModCount;
     int index;
     HashIterator( ) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public final boolean hasNext( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -276,6 +274,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
     int est;
     int expectedModCount;
     HashMapSpliterator(HashMap<K, V> m,int origin,int fence,int est, int expectedModCount) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     final int getFence( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -286,7 +285,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
   }
   static final class KeySpliterator<K,V> extends HashMapSpliterator<K, V> implements Spliterator<K> {
     KeySpliterator(HashMap<K, V> m,int origin,int fence,int est, int expectedModCount) {
-      super(m, origin, fence, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public KeySpliterator<K, V> trySplit( ) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
@@ -303,7 +302,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
   }
   static final class ValueSpliterator<K,V> extends HashMapSpliterator<K, V> implements Spliterator<V> {
     ValueSpliterator(HashMap<K, V> m,int origin,int fence,int est, int expectedModCount) {
-      super(m, origin, fence, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public ValueSpliterator<K, V> trySplit( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -320,7 +319,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
   }
   static final class EntrySpliterator<K,V> extends HashMapSpliterator<K, V> implements Spliterator<Map. Entry<K, V>> {
     EntrySpliterator(HashMap<K, V> m,int origin,int fence,int est, int expectedModCount) {
-      super(m, origin, fence, est, expectedModCount);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public EntrySpliterator<K, V> trySplit( ) {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
@@ -369,7 +368,7 @@ public class HashMap<K,V> extends AbstractMap<K, V> implements Map<K, V>, Clonea
     TreeNode<K, V> prev;
     boolean red;
     TreeNode(int hash,K key,V val, Node<K, V> next) {
-      super(hash, key, val, next);
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     final TreeNode<K, V> root( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");

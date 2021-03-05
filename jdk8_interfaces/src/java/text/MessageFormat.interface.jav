@@ -1,16 +1,13 @@
 package java.text;
 
-import java.io.InvalidObjectException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.List;
 import java.util.Locale;
 
 public class MessageFormat extends Format {
-  private static final long serialVersionUID;
   public MessageFormat(String pattern) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public MessageFormat(String pattern, Locale locale) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void setLocale(Locale locale) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -73,59 +70,6 @@ public class MessageFormat extends Format {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
   public static class Field extends Format. Field {
-    private static final long serialVersionUID;
-    protected Field(String name) {
-      super(name);
-    }
-    protected Object readResolve( ) throws InvalidObjectException {
-                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                  }
     public final static Field ARGUMENT;
   }
-  private Locale locale;
-  private String pattern;
-  private static final int INITIAL_FORMATS;
-  private Format [] formats;
-  private int [] offsets;
-  private int [] argumentNumbers;
-  private int maxOffset;
-  private StringBuffer subformat(Object [] arguments,StringBuffer result,FieldPosition fp, List<AttributedCharacterIterator> characterIterators) {
-                                                                                                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                                                                 }
-  private void append(StringBuffer result, CharacterIterator iterator) {
-                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                       }
-  private static final int SEG_RAW;
-  private static final int SEG_INDEX;
-  private static final int SEG_TYPE;
-  private static final int SEG_MODIFIER;
-  private static final int TYPE_NULL;
-  private static final int TYPE_NUMBER;
-  private static final int TYPE_DATE;
-  private static final int TYPE_TIME;
-  private static final int TYPE_CHOICE;
-  private static final String [] TYPE_KEYWORDS;
-  private static final int MODIFIER_DEFAULT;
-  private static final int MODIFIER_CURRENCY;
-  private static final int MODIFIER_PERCENT;
-  private static final int MODIFIER_INTEGER;
-  private static final String [] NUMBER_MODIFIER_KEYWORDS;
-  private static final int MODIFIER_SHORT;
-  private static final int MODIFIER_MEDIUM;
-  private static final int MODIFIER_LONG;
-  private static final int MODIFIER_FULL;
-  private static final String [] DATE_TIME_MODIFIER_KEYWORDS;
-  private static final int [] DATE_TIME_MODIFIERS;
-  private void makeFormat(int position,int offsetNumber, StringBuilder [] textSegments) {
-                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                        }
-  private static final int findKeyword(String s, String [] list) {
-                                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                 }
-  private static final void copyAndFixQuotes(String source,int start,int end, StringBuilder target) {
-                                                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                    }
-  private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-                                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                           }
 }

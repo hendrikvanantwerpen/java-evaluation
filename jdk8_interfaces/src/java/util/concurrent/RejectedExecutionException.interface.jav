@@ -2,16 +2,16 @@ package java.util.concurrent;
 
 
 public class RejectedExecutionException extends RuntimeException {
-  private static final long serialVersionUID;
   public RejectedExecutionException( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public RejectedExecutionException(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public RejectedExecutionException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public RejectedExecutionException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

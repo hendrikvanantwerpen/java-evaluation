@@ -1,7 +1,5 @@
 package java.lang;
 
-import java.util.Map;
-import java.util.HashMap;
 
 public final class Character implements java. io. Serializable, Comparable<Character> {
   public static final int MIN_RADIX;
@@ -70,9 +68,6 @@ public final class Character implements java. io. Serializable, Comparable<Chara
   public static final int MIN_CODE_POINT;
   public static final int MAX_CODE_POINT;
   public static class Subset {
-    private String name;
-    protected Subset(String name) {
-    }
     public final boolean equals(Object obj) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
@@ -84,16 +79,6 @@ public final class Character implements java. io. Serializable, Comparable<Chara
                                     }
   }
   public static final class UnicodeBlock extends Subset {
-    private static Map<String, UnicodeBlock> map;
-    private UnicodeBlock(String idName) {
-      super(idName);
-    }
-    private UnicodeBlock(String idName, String alias) {
-      this(idName);
-    }
-    private UnicodeBlock(String idName, String ... aliases) {
-      this(idName);
-    }
     public static final UnicodeBlock BASIC_LATIN;
     public static final UnicodeBlock LATIN_1_SUPPLEMENT;
     public static final UnicodeBlock LATIN_EXTENDED_A;
@@ -315,8 +300,6 @@ public final class Character implements java. io. Serializable, Comparable<Chara
     public static final UnicodeBlock TAKRI;
     public static final UnicodeBlock MIAO;
     public static final UnicodeBlock ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS;
-    private static final int blockStarts[];
-    private static final UnicodeBlock [] blocks;
     public static UnicodeBlock of(char c) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
@@ -328,31 +311,18 @@ public final class Character implements java. io. Serializable, Comparable<Chara
                                                                }
   }
   public static enum UnicodeScript {
-    COMMON, LATIN, GREEK, CYRILLIC, ARMENIAN, HEBREW, ARABIC, SYRIAC, THAANA, DEVANAGARI, BENGALI, GURMUKHI, GUJARATI, ORIYA, TAMIL, TELUGU, KANNADA, MALAYALAM, SINHALA, THAI, LAO, TIBETAN, MYANMAR, GEORGIAN, HANGUL, ETHIOPIC, CHEROKEE, CANADIAN_ABORIGINAL, OGHAM, RUNIC, KHMER, MONGOLIAN, HIRAGANA, KATAKANA, BOPOMOFO, HAN, YI, OLD_ITALIC, GOTHIC, DESERET, INHERITED, TAGALOG, HANUNOO, BUHID, TAGBANWA, LIMBU, TAI_LE, LINEAR_B, UGARITIC, SHAVIAN, OSMANYA, CYPRIOT, BRAILLE, BUGINESE, COPTIC, NEW_TAI_LUE, GLAGOLITIC, TIFINAGH, SYLOTI_NAGRI, OLD_PERSIAN, KHAROSHTHI, BALINESE, CUNEIFORM, PHOENICIAN, PHAGS_PA, NKO, SUNDANESE, BATAK, LEPCHA, OL_CHIKI, VAI, SAURASHTRA, KAYAH_LI, REJANG, LYCIAN, CARIAN, LYDIAN, CHAM, TAI_THAM, TAI_VIET, AVESTAN, EGYPTIAN_HIEROGLYPHS, SAMARITAN, MANDAIC, LISU, BAMUM, JAVANESE, MEETEI_MAYEK, IMPERIAL_ARAMAIC, OLD_SOUTH_ARABIAN, INSCRIPTIONAL_PARTHIAN, INSCRIPTIONAL_PAHLAVI, OLD_TURKIC, BRAHMI, KAITHI, MEROITIC_HIEROGLYPHS, MEROITIC_CURSIVE, SORA_SOMPENG, CHAKMA, SHARADA, TAKRI, MIAO, UNKNOWN
-    ;  private static final int [] scriptStarts;
-       private static final UnicodeScript [] scripts;
-       private static HashMap<String, Character. UnicodeScript> aliases;
-       static {
-                throw new java . lang . RuntimeException ("Implementation stripped");
-              }
-       public static UnicodeScript of(int codePoint) {
+    ;  public static UnicodeScript of(int codePoint) {
                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                      }
        public static final UnicodeScript forName(String scriptName) {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
   }
-  private final char value;
-  private static final long serialVersionUID;
   public Character(char value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   private static class CharacterCache {
-    private CharacterCache( ) {
-    }
     static final Character cache[];
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
   }
   public static Character valueOf(char c) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");

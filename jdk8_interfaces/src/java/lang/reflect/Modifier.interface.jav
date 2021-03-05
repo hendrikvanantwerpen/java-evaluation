@@ -2,9 +2,6 @@ package java.lang.reflect;
 
 
 public class Modifier {
-  static {
-           throw new java . lang . RuntimeException ("Implementation stripped");
-         }
   public static boolean isPublic(int mod) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
@@ -68,12 +65,6 @@ public class Modifier {
   static boolean isMandated(int mod) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
-  private static final int CLASS_MODIFIERS;
-  private static final int INTERFACE_MODIFIERS;
-  private static final int CONSTRUCTOR_MODIFIERS;
-  private static final int METHOD_MODIFIERS;
-  private static final int FIELD_MODIFIERS;
-  private static final int PARAMETER_MODIFIERS;
   static final int ACCESS_MODIFIERS;
   public static int classModifiers( ) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");

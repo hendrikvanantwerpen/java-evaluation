@@ -19,8 +19,10 @@ public final class Matcher implements MatchResult {
   boolean transparentBounds;
   boolean anchoringBounds;
   Matcher( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   Matcher(Pattern parent, CharSequence text) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Pattern pattern( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");

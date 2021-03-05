@@ -11,6 +11,7 @@ public class ParsePosition {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
   public ParsePosition(int index) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public void setErrorIndex(int ei) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");

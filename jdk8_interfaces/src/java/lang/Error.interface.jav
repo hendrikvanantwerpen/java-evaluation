@@ -4,18 +4,15 @@ package java.lang;
 public class Error extends Throwable {
   static final long serialVersionUID;
   public Error( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Error(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Error(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Error(Throwable cause) {
-    super(cause);
-  }
-  protected Error(String message,Throwable cause,boolean enableSuppression, boolean writableStackTrace) {
-    super(message, cause, enableSuppression, writableStackTrace);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

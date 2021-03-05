@@ -1,16 +1,11 @@
 package java.text;
 
-import java.io.InvalidObjectException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Map;
 import java.util.TimeZone;
-import sun.util.locale.provider.LocaleProviderAdapter;
 
 public abstract class DateFormat extends Format {
-  protected Calendar calendar;
-  protected NumberFormat numberFormat;
   public final static int ERA_FIELD;
   public final static int YEAR_FIELD;
   public final static int MONTH_FIELD;
@@ -29,7 +24,6 @@ public abstract class DateFormat extends Format {
   public final static int HOUR1_FIELD;
   public final static int HOUR0_FIELD;
   public final static int TIMEZONE_FIELD;
-  private static final long serialVersionUID;
   public final StringBuffer format(Object obj,StringBuffer toAppendTo, FieldPosition fieldPosition) {
                                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                     }
@@ -115,31 +109,13 @@ public abstract class DateFormat extends Format {
   public Object clone( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  private static DateFormat get(int timeStyle,int dateStyle,int flags, Locale loc) {
-                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                   }
-  private static DateFormat get(LocaleProviderAdapter adapter,int timeStyle,int dateStyle, Locale loc) {
-                                                                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                       }
-  protected DateFormat( ) {
-  }
   public static class Field extends Format. Field {
-    private static final long serialVersionUID;
-    private static final Map<String, Field> instanceMap;
-    private static final Field [] calendarToFieldMapping;
-    private int calendarField;
     public static Field ofCalendarField(int calendarField) {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
-    protected Field(String name, int calendarField) {
-      super(name);
-    }
     public int getCalendarField( ) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                    }
-    protected Object readResolve( ) throws InvalidObjectException {
-                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                  }
     public final static Field ERA;
     public final static Field YEAR;
     public final static Field MONTH;

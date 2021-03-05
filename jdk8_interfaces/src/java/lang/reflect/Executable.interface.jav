@@ -1,11 +1,11 @@
 package java.lang.reflect;
 
 import java.lang.annotation.*;
-import java.util.Map;
 import sun.reflect.generics.repository.ConstructorRepository;
 
 public abstract class Executable extends AccessibleObject implements Member, GenericDeclaration {
   Executable( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   abstract byte [] getAnnotationBytes( ) ;
   abstract Executable getRoot( ) ;
@@ -48,21 +48,9 @@ public abstract class Executable extends AccessibleObject implements Member, Gen
   public Parameter [] getParameters( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
-  private Parameter [] synthesizeAllParams( ) {
-                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                              }
-  private void verifyParameters(final Parameter [] parameters) {
-                                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                                               }
-  private Parameter [] privateGetParameters( ) {
-                                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                                               }
   boolean hasRealParameterData( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private transient volatile boolean hasRealParameterData;
-  private transient volatile Parameter [] parameters;
-  private native Parameter [] getParameters0( ) ;
   native byte [] getTypeAnnotationBytes0( ) ;
   byte [] getTypeAnnotationBytes( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -92,10 +80,6 @@ public abstract class Executable extends AccessibleObject implements Member, Gen
   public Annotation [] getDeclaredAnnotations( ) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  private transient volatile Map<Class<? extends Annotation>, Annotation> declaredAnnotations;
-  private Map<Class<? extends Annotation>, Annotation> declaredAnnotations( ) {
-                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                              }
   public abstract AnnotatedType getAnnotatedReturnType( ) ;
   AnnotatedType getAnnotatedReturnType0(Type returnType) {
                                                            throw new java . lang . RuntimeException ("Implementation stripped");

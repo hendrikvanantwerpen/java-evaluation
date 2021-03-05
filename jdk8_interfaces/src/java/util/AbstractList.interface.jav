@@ -2,8 +2,6 @@ package java.util;
 
 
 public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E> {
-  protected AbstractList( ) {
-  }
   public boolean add(E e) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
                           }
@@ -57,6 +55,7 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
   }
   private class ListItr extends Itr implements ListIterator<E> {
     ListItr(int index) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public boolean hasPrevious( ) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
@@ -86,22 +85,10 @@ public abstract class AbstractList<E> extends AbstractCollection<E> implements L
   public int hashCode( ) {
                            throw new java . lang . RuntimeException ("Implementation stripped");
                          }
-  protected void removeRange(int fromIndex, int toIndex) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
-  protected transient int modCount;
-  private void rangeCheckForAdd(int index) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private String outOfBoundsMsg(int index) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
 }
 class SubList<E> extends AbstractList<E> {
-  private final AbstractList<E> l;
-  private final int offset;
-  private int size;
   SubList(AbstractList<E> list,int fromIndex, int toIndex) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public E set(int index, E element) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -118,9 +105,6 @@ class SubList<E> extends AbstractList<E> {
   public E remove(int index) {
                                throw new java . lang . RuntimeException ("Implementation stripped");
                              }
-  protected void removeRange(int fromIndex, int toIndex) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
   public boolean addAll(Collection<? extends E> c) {
                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                    }
@@ -136,22 +120,10 @@ class SubList<E> extends AbstractList<E> {
   public List<E> subList(int fromIndex, int toIndex) {
                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                      }
-  private void rangeCheck(int index) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
-  private void rangeCheckForAdd(int index) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private String outOfBoundsMsg(int index) {
-                                             throw new java . lang . RuntimeException ("Implementation stripped");
-                                           }
-  private void checkForComodification( ) {
-                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                         }
 }
 class RandomAccessSubList<E> extends SubList<E> implements RandomAccess {
   RandomAccessSubList(AbstractList<E> list,int fromIndex, int toIndex) {
-    super(list, fromIndex, toIndex);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public List<E> subList(int fromIndex, int toIndex) {
                                                        throw new java . lang . RuntimeException ("Implementation stripped");

@@ -2,21 +2,19 @@ package java.io;
 
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
-import sun.nio.cs.StreamDecoder;
 
 public class InputStreamReader extends Reader {
-  private final StreamDecoder sd;
   public InputStreamReader(InputStream in) {
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InputStreamReader(InputStream in, String charsetName) throws UnsupportedEncodingException{
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InputStreamReader(InputStream in, Charset cs) {
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InputStreamReader(InputStream in, CharsetDecoder dec) {
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public String getEncoding( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");

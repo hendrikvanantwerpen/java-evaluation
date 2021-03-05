@@ -2,19 +2,18 @@ package java.lang;
 
 
 public final class StringBuffer extends AbstractStringBuilder implements java. io. Serializable, CharSequence {
-  private transient char [] toStringCache;
   static final long serialVersionUID;
   public StringBuffer( ) {
-    super(16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuffer(int capacity) {
-    super(capacity);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuffer(String str) {
-    super(str. length( ) + 16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StringBuffer(CharSequence seq) {
-    this(seq. length( ) + 16);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public synchronized int length( ) {
                                       throw new java . lang . RuntimeException ("Implementation stripped");
@@ -169,11 +168,4 @@ public final class StringBuffer extends AbstractStringBuilder implements java. i
   public synchronized String toString( ) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private static final java. io. ObjectStreamField [] serialPersistentFields;
-  private synchronized void writeObject(java. io. ObjectOutputStream s) throws java. io. IOException {
-                                                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                     }
-  private void readObject(java. io. ObjectInputStream s) throws java. io. IOException, ClassNotFoundException {
-                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                                              }
 }

@@ -2,11 +2,10 @@ package java.util;
 
 
 public class NoSuchElementException extends RuntimeException {
-  private static final long serialVersionUID;
   public NoSuchElementException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public NoSuchElementException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

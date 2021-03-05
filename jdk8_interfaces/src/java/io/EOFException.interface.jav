@@ -2,11 +2,10 @@ package java.io;
 
 
 public class EOFException extends IOException {
-  private static final long serialVersionUID;
   public EOFException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public EOFException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

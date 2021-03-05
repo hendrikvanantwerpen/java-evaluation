@@ -10,12 +10,9 @@ import java.nio.file.spi.*;
 import java.util.Set;
 
 public abstract class FileChannel extends AbstractInterruptibleChannel implements SeekableByteChannel, GatheringByteChannel, ScatteringByteChannel {
-  protected FileChannel( ) {
-  }
   public static FileChannel open(Path path,Set<? extends OpenOption> options, FileAttribute<?> ... attrs) throws IOException {
                                                                                                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                                              }
-  private static final FileAttribute<?> [] NO_ATTRIBUTES;
   public static FileChannel open(Path path, OpenOption ... options) throws IOException {
                                                                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                        }
@@ -42,9 +39,6 @@ public abstract class FileChannel extends AbstractInterruptibleChannel implement
     public static final MapMode READ_ONLY;
     public static final MapMode READ_WRITE;
     public static final MapMode PRIVATE;
-    private final String name;
-    private MapMode(String name) {
-    }
     public String toString( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }

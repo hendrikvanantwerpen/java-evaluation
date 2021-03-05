@@ -2,13 +2,6 @@ package java.io;
 
 
 public abstract class Writer implements Appendable, Closeable, Flushable {
-  private char [] writeBuffer;
-  private static final int WRITE_BUFFER_SIZE;
-  protected Object lock;
-  protected Writer( ) {
-  }
-  protected Writer(Object lock) {
-  }
   public void write(int c) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }

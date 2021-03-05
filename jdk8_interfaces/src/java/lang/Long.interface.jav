@@ -12,9 +12,6 @@ public final class Long extends Number implements Comparable<Long> {
   public static String toUnsignedString(long i, int radix) {
                                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                                            }
-  private static BigInteger toUnsignedBigInteger(long i) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
   public static String toHexString(long i) {
                                              throw new java . lang . RuntimeException ("Implementation stripped");
                                            }
@@ -61,12 +58,7 @@ public final class Long extends Number implements Comparable<Long> {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
   private static class LongCache {
-    private LongCache( ) {
-    }
     static final Long cache[];
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
   }
   public static Long valueOf(long l) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
@@ -74,10 +66,11 @@ public final class Long extends Number implements Comparable<Long> {
   public static Long decode(String nm) throws NumberFormatException {
                                                                       throw new java . lang . RuntimeException ("Implementation stripped");
                                                                     }
-  private final long value;
   public Long(long value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Long(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public byte byteValue( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -174,5 +167,4 @@ public final class Long extends Number implements Comparable<Long> {
   public static long min(long a, long b) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private static final long serialVersionUID;
 }

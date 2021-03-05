@@ -22,22 +22,6 @@ public interface Spliterator<T> {
   default Comparator<? super T> getComparator( ) {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
-  public static final int ORDERED
-  ;
-  public static final int DISTINCT
-  ;
-  public static final int SORTED
-  ;
-  public static final int SIZED
-  ;
-  public static final int NONNULL
-  ;
-  public static final int IMMUTABLE
-  ;
-  public static final int CONCURRENT
-  ;
-  public static final int SUBSIZED
-  ;
   public interface OfPrimitive<T,T_CONS,T_SPLITR extends Spliterator. OfPrimitive<T, T_CONS, T_SPLITR>> extends Spliterator<T> {
     T_SPLITR trySplit( ) ;
     boolean tryAdvance(T_CONS action) ;

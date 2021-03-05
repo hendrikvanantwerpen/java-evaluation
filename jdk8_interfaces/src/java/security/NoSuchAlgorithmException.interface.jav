@@ -2,17 +2,16 @@ package java.security;
 
 
 public class NoSuchAlgorithmException extends GeneralSecurityException {
-  private static final long serialVersionUID;
   public NoSuchAlgorithmException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public NoSuchAlgorithmException(String msg) {
-    super(msg);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public NoSuchAlgorithmException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public NoSuchAlgorithmException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

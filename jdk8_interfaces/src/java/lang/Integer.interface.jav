@@ -21,9 +21,6 @@ public final class Integer extends Number implements Comparable<Integer> {
   public static String toBinaryString(int i) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
-  private static String toUnsignedString0(int val, int shift) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
   static int formatUnsignedInt(int val,int shift,char [] buf,int offset, int len) {
                                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                   }
@@ -64,19 +61,15 @@ public final class Integer extends Number implements Comparable<Integer> {
     static final int low;
     static final int high;
     static final Integer cache[];
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
-    private IntegerCache( ) {
-    }
   }
   public static Integer valueOf(int i) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                        }
-  private final int value;
   public Integer(int value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Integer(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public byte byteValue( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -179,5 +172,4 @@ public final class Integer extends Number implements Comparable<Integer> {
   public static int min(int a, int b) {
                                         throw new java . lang . RuntimeException ("Implementation stripped");
                                       }
-  private static final long serialVersionUID;
 }

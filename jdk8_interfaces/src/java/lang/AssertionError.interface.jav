@@ -2,34 +2,31 @@ package java.lang;
 
 
 public class AssertionError extends Error {
-  private static final long serialVersionUID;
   public AssertionError( ) {
-  }
-  private AssertionError(String detailMessage) {
-    super(detailMessage);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(Object detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(boolean detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(char detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(int detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(long detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(float detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(double detailMessage) {
-    this(String. valueOf(detailMessage));
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public AssertionError(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

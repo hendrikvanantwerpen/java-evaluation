@@ -2,10 +2,10 @@ package java.util.concurrent;
 
 
 public class CancellationException extends IllegalStateException {
-  private static final long serialVersionUID;
   public CancellationException( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public CancellationException(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

@@ -2,17 +2,16 @@ package java.security;
 
 
 public class GeneralSecurityException extends Exception {
-  private static final long serialVersionUID;
   public GeneralSecurityException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public GeneralSecurityException(String msg) {
-    super(msg);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public GeneralSecurityException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public GeneralSecurityException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

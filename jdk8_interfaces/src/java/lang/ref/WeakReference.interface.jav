@@ -3,9 +3,9 @@ package java.lang.ref;
 
 public class WeakReference<T> extends Reference<T> {
   public WeakReference(T referent) {
-    super(referent);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public WeakReference(T referent, ReferenceQueue<? super T> q) {
-    super(referent, q);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

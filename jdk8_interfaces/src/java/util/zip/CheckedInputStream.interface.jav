@@ -5,9 +5,8 @@ import java.io.InputStream;
 import java.io.IOException;
 
 public class CheckedInputStream extends FilterInputStream {
-  private Checksum cksum;
   public CheckedInputStream(InputStream in, Checksum cksum) {
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");

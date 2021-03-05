@@ -3,35 +3,15 @@ package java.io;
 import java.util.stream.Stream;
 
 public class BufferedReader extends Reader {
-  private Reader in;
-  private char cb[];
-  private int nChars, nextChar;
-  private static final int INVALIDATED;
-  private static final int UNMARKED;
-  private int markedChar;
-  private int readAheadLimit;
-  private boolean skipLF;
-  private boolean markedSkipLF;
-  private static int defaultCharBufferSize;
-  private static int defaultExpectedLineLength;
   public BufferedReader(Reader in, int sz) {
-    super(in);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public BufferedReader(Reader in) {
-    this(in, defaultCharBufferSize);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private void ensureOpen( ) throws IOException {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
-  private void fill( ) throws IOException {
-                                            throw new java . lang . RuntimeException ("Implementation stripped");
-                                          }
   public int read( ) throws IOException {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private int read1(char [] cbuf,int off, int len) throws IOException {
-                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                      }
   public int read(char cbuf[],int off, int len) throws IOException {
                                                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                                                    }

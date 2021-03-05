@@ -4,15 +4,15 @@ package java.io;
 public class IOException extends Exception {
   static final long serialVersionUID;
   public IOException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IOException(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IOException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public IOException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

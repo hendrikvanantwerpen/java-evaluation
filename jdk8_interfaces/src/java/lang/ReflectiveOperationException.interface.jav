@@ -4,15 +4,15 @@ package java.lang;
 public class ReflectiveOperationException extends Exception {
   static final long serialVersionUID;
   public ReflectiveOperationException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ReflectiveOperationException(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ReflectiveOperationException(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ReflectiveOperationException(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

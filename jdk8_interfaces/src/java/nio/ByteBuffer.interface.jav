@@ -6,10 +6,10 @@ public abstract class ByteBuffer extends Buffer implements Comparable<ByteBuffer
   final int offset;
   boolean isReadOnly;
   ByteBuffer(int mark,int pos,int lim,int cap,byte [] hb, int offset) {
-    super(mark, pos, lim, cap);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   ByteBuffer(int mark,int pos,int lim, int cap) {
-    this(mark, pos, lim, cap, null, 0);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public static ByteBuffer allocateDirect(int capacity) {
                                                           throw new java . lang . RuntimeException ("Implementation stripped");
@@ -65,15 +65,9 @@ public abstract class ByteBuffer extends Buffer implements Comparable<ByteBuffer
   public boolean equals(Object ob) {
                                      throw new java . lang . RuntimeException ("Implementation stripped");
                                    }
-  private static boolean equals(byte x, byte y) {
-                                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                                }
   public int compareTo(ByteBuffer that) {
                                           throw new java . lang . RuntimeException ("Implementation stripped");
                                         }
-  private static int compare(byte x, byte y) {
-                                               throw new java . lang . RuntimeException ("Implementation stripped");
-                                             }
   boolean bigEndian;
   boolean nativeByteOrder;
   public final ByteOrder order( ) {

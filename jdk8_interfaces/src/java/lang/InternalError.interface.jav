@@ -2,17 +2,16 @@ package java.lang;
 
 
 public class InternalError extends VirtualMachineError {
-  private static final long serialVersionUID;
   public InternalError( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InternalError(String message) {
-    super(message);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InternalError(String message, Throwable cause) {
-    super(message, cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InternalError(Throwable cause) {
-    super(cause);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

@@ -2,10 +2,6 @@ package java.io;
 
 
 public abstract class FilterWriter extends Writer {
-  protected Writer out;
-  protected FilterWriter(Writer out) {
-    super(out);
-  }
   public void write(int c) throws IOException {
                                                 throw new java . lang . RuntimeException ("Implementation stripped");
                                               }

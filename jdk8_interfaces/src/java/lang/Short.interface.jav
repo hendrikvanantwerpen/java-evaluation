@@ -21,12 +21,7 @@ public final class Short extends Number implements Comparable<Short> {
                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                      }
   private static class ShortCache {
-    private ShortCache( ) {
-    }
     static final Short cache[];
-    static {
-             throw new java . lang . RuntimeException ("Implementation stripped");
-           }
   }
   public static Short valueOf(short s) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -34,10 +29,11 @@ public final class Short extends Number implements Comparable<Short> {
   public static Short decode(String nm) throws NumberFormatException {
                                                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                                                      }
-  private final short value;
   public Short(short value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Short(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public byte byteValue( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
@@ -86,5 +82,4 @@ public final class Short extends Number implements Comparable<Short> {
   public static long toUnsignedLong(short x) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
                                              }
-  private static final long serialVersionUID;
 }

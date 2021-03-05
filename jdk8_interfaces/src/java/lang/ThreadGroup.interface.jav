@@ -3,7 +3,6 @@ package java.lang;
 import java.io.PrintStream;
 
 public class ThreadGroup implements Thread. UncaughtExceptionHandler {
-  private final ThreadGroup parent;
   String name;
   int maxPriority;
   boolean destroyed;
@@ -14,19 +13,12 @@ public class ThreadGroup implements Thread. UncaughtExceptionHandler {
   Thread threads[];
   int ngroups;
   ThreadGroup groups[];
-  private ThreadGroup( ) {
-  }
   public ThreadGroup(String name) {
-    this(Thread. currentThread( ). getThreadGroup( ), name);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public ThreadGroup(ThreadGroup parent, String name) {
-    this(checkParentAccess(parent), parent, name);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  private ThreadGroup(Void unused,ThreadGroup parent, String name) {
-  }
-  private static Void checkParentAccess(ThreadGroup parent) {
-                                                              throw new java . lang . RuntimeException ("Implementation stripped");
-                                                            }
   public final String getName( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
@@ -63,9 +55,6 @@ public class ThreadGroup implements Thread. UncaughtExceptionHandler {
   public int enumerate(Thread list[], boolean recurse) {
                                                          throw new java . lang . RuntimeException ("Implementation stripped");
                                                        }
-  private int enumerate(Thread list[],int n, boolean recurse) {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
   public int activeGroupCount( ) {
                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                  }
@@ -75,9 +64,6 @@ public class ThreadGroup implements Thread. UncaughtExceptionHandler {
   public int enumerate(ThreadGroup list[], boolean recurse) {
                                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                                             }
-  private int enumerate(ThreadGroup list[],int n, boolean recurse) {
-                                                                     throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                   }
   public final void stop( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
@@ -87,21 +73,12 @@ public class ThreadGroup implements Thread. UncaughtExceptionHandler {
   public final void suspend( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
-  private boolean stopOrSuspend(boolean suspend) {
-                                                   throw new java . lang . RuntimeException ("Implementation stripped");
-                                                 }
   public final void resume( ) {
                                 throw new java . lang . RuntimeException ("Implementation stripped");
                               }
   public final void destroy( ) {
                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                }
-  private final void add(ThreadGroup g) {
-                                          throw new java . lang . RuntimeException ("Implementation stripped");
-                                        }
-  private void remove(ThreadGroup g) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
   void addUnstarted( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
                        }
@@ -114,9 +91,6 @@ public class ThreadGroup implements Thread. UncaughtExceptionHandler {
   void threadTerminated(Thread t) {
                                     throw new java . lang . RuntimeException ("Implementation stripped");
                                   }
-  private void remove(Thread t) {
-                                  throw new java . lang . RuntimeException ("Implementation stripped");
-                                }
   public void list( ) {
                         throw new java . lang . RuntimeException ("Implementation stripped");
                       }

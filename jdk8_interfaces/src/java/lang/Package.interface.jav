@@ -1,8 +1,6 @@
 package java.lang;
 
 import java.net.URL;
-import java.util.jar.Manifest;
-import java.util.Map;
 import java.lang.annotation.Annotation;
 
 public class Package implements java. lang. reflect. AnnotatedElement {
@@ -51,9 +49,6 @@ public class Package implements java. lang. reflect. AnnotatedElement {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  private Class<?> getPackageInfo( ) {
-                                       throw new java . lang . RuntimeException ("Implementation stripped");
-                                     }
   public <A extends Annotation> A getAnnotation(Class<A> annotationClass) {
                                                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                                                           }
@@ -76,8 +71,7 @@ public class Package implements java. lang. reflect. AnnotatedElement {
                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                  }
   Package(String name,String spectitle,String specversion,String specvendor,String impltitle,String implversion,String implvendor,URL sealbase, ClassLoader loader) {
-  }
-  private Package(String name,Manifest man,URL url, ClassLoader loader) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   static Package getSystemPackage(String name) {
                                                  throw new java . lang . RuntimeException ("Implementation stripped");
@@ -85,25 +79,4 @@ public class Package implements java. lang. reflect. AnnotatedElement {
   static Package [] getSystemPackages( ) {
                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                          }
-  private static Package defineSystemPackage(final String iname, final String fn) {
-                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                                                  }
-  private static Manifest loadManifest(String fn) {
-                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                  }
-  private static Map<String, Package> pkgs;
-  private static Map<String, URL> urls;
-  private static Map<String, Manifest> mans;
-  private static native String getSystemPackage0(String name) ;
-  private static native String [] getSystemPackages0( ) ;
-  private final String pkgName;
-  private final String specTitle;
-  private final String specVersion;
-  private final String specVendor;
-  private final String implTitle;
-  private final String implVersion;
-  private final String implVendor;
-  private final URL sealBase;
-  private transient final ClassLoader loader;
-  private transient Class<?> packageInfo;
 }

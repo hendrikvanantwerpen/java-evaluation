@@ -2,11 +2,10 @@ package java.lang;
 
 
 public class InterruptedException extends Exception {
-  private static final long serialVersionUID;
   public InterruptedException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public InterruptedException(String s) {
-    super(s);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

@@ -2,18 +2,17 @@ package java.util;
 
 
 public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, java. io. Serializable {
-  private static final long serialVersionUID;
   public LinkedHashSet(int initialCapacity, float loadFactor) {
-    super(initialCapacity, loadFactor, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashSet(int initialCapacity) {
-    super(initialCapacity, .75f, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashSet( ) {
-    super(16, .75f, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public LinkedHashSet(Collection<? extends E> c) {
-    super(Math. max(2 * c. size( ), 11), .75f, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Spliterator<E> spliterator( ) {
                                          throw new java . lang . RuntimeException ("Implementation stripped");

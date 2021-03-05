@@ -37,12 +37,14 @@ public final class Float extends Number implements Comparable<Float> {
   public static boolean isFinite(float f) {
                                             throw new java . lang . RuntimeException ("Implementation stripped");
                                           }
-  private final float value;
   public Float(float value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Float(double value) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Float(String s) throws NumberFormatException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public boolean isNaN( ) {
                             throw new java . lang . RuntimeException ("Implementation stripped");
@@ -100,5 +102,4 @@ public final class Float extends Number implements Comparable<Float> {
   public static float min(float a, float b) {
                                               throw new java . lang . RuntimeException ("Implementation stripped");
                                             }
-  private static final long serialVersionUID;
 }

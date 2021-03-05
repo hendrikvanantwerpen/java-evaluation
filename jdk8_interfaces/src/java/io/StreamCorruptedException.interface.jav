@@ -2,11 +2,10 @@ package java.io;
 
 
 public class StreamCorruptedException extends ObjectStreamException {
-  private static final long serialVersionUID;
   public StreamCorruptedException(String reason) {
-    super(reason);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public StreamCorruptedException( ) {
-    super( );
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
 }

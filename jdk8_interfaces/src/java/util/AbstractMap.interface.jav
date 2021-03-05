@@ -3,8 +3,6 @@ package java.util;
 import java.util.Map.Entry;
 
 public abstract class AbstractMap<K,V> implements Map<K, V> {
-  protected AbstractMap( ) {
-  }
   public int size( ) {
                        throw new java . lang . RuntimeException ("Implementation stripped");
                      }
@@ -50,19 +48,12 @@ public abstract class AbstractMap<K,V> implements Map<K, V> {
   public String toString( ) {
                               throw new java . lang . RuntimeException ("Implementation stripped");
                             }
-  protected Object clone( ) throws CloneNotSupportedException {
-                                                                throw new java . lang . RuntimeException ("Implementation stripped");
-                                                              }
-  private static boolean eq(Object o1, Object o2) {
-                                                    throw new java . lang . RuntimeException ("Implementation stripped");
-                                                  }
   public static class SimpleEntry<K,V> implements Entry<K, V>, java. io. Serializable {
-    private static final long serialVersionUID;
-    private final K key;
-    private V value;
     public SimpleEntry(K key, V value) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public SimpleEntry(Entry<? extends K, ? extends V> entry) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public K getKey( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");
@@ -84,12 +75,11 @@ public abstract class AbstractMap<K,V> implements Map<K, V> {
                               }
   }
   public static class SimpleImmutableEntry<K,V> implements Entry<K, V>, java. io. Serializable {
-    private static final long serialVersionUID;
-    private final K key;
-    private final V value;
     public SimpleImmutableEntry(K key, V value) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public SimpleImmutableEntry(Entry<? extends K, ? extends V> entry) {
+      throw new java . lang . RuntimeException ("Implementation stripped");
     }
     public K getKey( ) {
                          throw new java . lang . RuntimeException ("Implementation stripped");

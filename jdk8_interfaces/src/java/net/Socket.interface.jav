@@ -6,50 +6,34 @@ import java.io.IOException;
 import java.nio.channels.SocketChannel;
 
 public class Socket implements java. io. Closeable {
-  private boolean created;
-  private boolean bound;
-  private boolean connected;
-  private boolean closed;
-  private Object closeLock;
-  private boolean shutIn;
-  private boolean shutOut;
   SocketImpl impl;
-  private boolean oldImpl;
   public Socket( ) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Socket(Proxy proxy) {
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  protected Socket(SocketImpl impl) throws SocketException{
-  }
-  private static Void checkPermission(SocketImpl impl) {
-                                                         throw new java . lang . RuntimeException ("Implementation stripped");
-                                                       }
   public Socket(String host, int port) throws UnknownHostException, IOException{
-    this(host != null ? new InetSocketAddress (host,port) : new InetSocketAddress (InetAddress. getByName(null),port), (SocketAddress ) null, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Socket(InetAddress address, int port) throws IOException{
-    this(address != null ? new InetSocketAddress (address,port) : null, (SocketAddress ) null, true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Socket(String host,int port,InetAddress localAddr, int localPort) throws IOException{
-    this(host != null ? new InetSocketAddress (host,port) : new InetSocketAddress (InetAddress. getByName(null),port), new InetSocketAddress (localAddr,localPort), true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Socket(InetAddress address,int port,InetAddress localAddr, int localPort) throws IOException{
-    this(address != null ? new InetSocketAddress (address,port) : null, new InetSocketAddress (localAddr,localPort), true);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Socket(String host,int port, boolean stream) throws IOException{
-    this(host != null ? new InetSocketAddress (host,port) : new InetSocketAddress (InetAddress. getByName(null),port), (SocketAddress ) null, stream);
+  public Socket(String host,int port, boolean stream) throws IOException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
-  @Deprecated public Socket(InetAddress host,int port, boolean stream) throws IOException{
-    this(host != null ? new InetSocketAddress (host,port) : null, new InetSocketAddress (0), stream);
-  }
-  private Socket(SocketAddress address,SocketAddress localAddr, boolean stream) throws IOException{
+  public Socket(InetAddress host,int port, boolean stream) throws IOException{
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   void createImpl(boolean stream) throws SocketException {
                                                            throw new java . lang . RuntimeException ("Implementation stripped");
                                                          }
-  private void checkOldImpl( ) {
-                                 throw new java . lang . RuntimeException ("Implementation stripped");
-                               }
   void setImpl( ) {
                     throw new java . lang . RuntimeException ("Implementation stripped");
                   }
@@ -65,9 +49,6 @@ public class Socket implements java. io. Closeable {
   public void bind(SocketAddress bindpoint) throws IOException {
                                                                  throw new java . lang . RuntimeException ("Implementation stripped");
                                                                }
-  private void checkAddress(InetAddress addr, String op) {
-                                                           throw new java . lang . RuntimeException ("Implementation stripped");
-                                                         }
   final void postAccept( ) {
                              throw new java . lang . RuntimeException ("Implementation stripped");
                            }
@@ -191,7 +172,6 @@ public class Socket implements java. io. Closeable {
   public boolean isOutputShutdown( ) {
                                        throw new java . lang . RuntimeException ("Implementation stripped");
                                      }
-  private static SocketImplFactory factory;
   public static synchronized void setSocketImplFactory(SocketImplFactory fac) throws IOException {
                                                                                                    throw new java . lang . RuntimeException ("Implementation stripped");
                                                                                                  }

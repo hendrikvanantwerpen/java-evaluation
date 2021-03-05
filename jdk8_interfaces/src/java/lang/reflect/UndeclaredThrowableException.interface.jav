@@ -3,12 +3,11 @@ package java.lang.reflect;
 
 public class UndeclaredThrowableException extends RuntimeException {
   static final long serialVersionUID;
-  private Throwable undeclaredThrowable;
   public UndeclaredThrowableException(Throwable undeclaredThrowable) {
-    super((Throwable ) null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public UndeclaredThrowableException(Throwable undeclaredThrowable, String s) {
-    super(s, null);
+    throw new java . lang . RuntimeException ("Implementation stripped");
   }
   public Throwable getUndeclaredThrowable( ) {
                                                throw new java . lang . RuntimeException ("Implementation stripped");
